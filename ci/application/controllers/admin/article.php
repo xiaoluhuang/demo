@@ -5,7 +5,7 @@
  * Date: 2017/3/23
  * Time: 下午7:13
  */
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct scripted');
 
 class Article extends MY_Controller
 {
