@@ -41,28 +41,15 @@ class Comment extends Db
     public function getList($id)
     {
         // 从blog表中取出所有的内容,应该算是个数组;?为什么这个命令是黄色的?
-        $sql = "SELECT * FROM comments where blog_id=$id";
+        $sql = "SELECT * FROM comments where blog_id={$id}";
+
         // 这个取出来的值不能直接用,要用另外一个变量,转化一下;为什么要写mysqli
         $return = $this->mysqli->query($sql);
+
         // 给取出的内容正确的格式;
-
         return $this->_format($return);
-
-
     }
 
-    /**
-     * 查询具体某评论详情
-     *
-     * @param $id
-     * @return array
-     */
-    /* public function one($id)
-     {
-         $sql = "SELECT * FROM comments where blog_id=$id";
-         return $this->mysqli->query($sql)->fetch_assoc();
-     }
- */
     /**
      * @param $data
      */
