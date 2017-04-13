@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" >
+    <title>主页</title>
+</head>
+<body>
+<div>
+    <li><a href="http://ci.dev/admin/article/send_article" >发表文章</a></li>
+    <li><a href="<?= site_url('admin/article/index')?>" >查看文章</a></li>
+    <li><a href="http://ci.dev/admin/category/add_cate" >添加栏目</a></li>
+    <li><a href="http://ci.dev/admin/category/index" >查看栏目</a></li>
+</div>
+<hr>
+<form action="<?= site_url('admin/category/add')?>" method="post">
+<table class="table">
+    <tr>
+        <td class="th" colspan="10">添加栏目</td>
+    </tr>
+    <tr>
+        <td>栏目名称</td>
+        <td><input type="text" name="cname" value="<?= set_value('cname')?>"/>
+        <?= form_error('cname')?>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="10"><input type="submit" value="添加" class="input_button"/></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

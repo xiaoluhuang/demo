@@ -1,0 +1,90 @@
+/*为什么这里的引用方式都不一样呢?
+id用#,class用.
+
+*/
+
+body {
+    background-color: #F4F4F4;
+}
+
+.header {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.6em;
+    color: #605F5F;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    min-height: 110px;
+    background-image: url(http://mindhacks.cn/wp-content/uploads/2016/12/mountain_sz.jpg);
+    background-color: rgb(234, 234, 234);
+}
+
+#title-bg {
+    background-color: #ECECEC;
+    padding: 1rem 0rem;
+    position: relative;
+}
+
+#title {
+
+    padding: 20px;
+}
+
+.center {
+    /*定义一个box的宽度和margin即可*/
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+#quote {
+    margin: 2em 0;
+    border-left: 10px solid #c1c8cd;
+    padding-left: 1em;
+    font-size: 1.063em;
+    color: #434343;
+}
+
+.aside {
+    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.1;
+    font-family: Lato, 'sans-serif';
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.lr_blog_entry_head {
+    color: #2ab8bd;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0 110px;
+}
+
+.comments-title {
+    padding: 0.5em 0.5em;
+    font-size: 1.313em;
+    font-weight: 600;
+    color: #888;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3;
+    border-bottom: 3px solid #EAEAEA;
+    margin: 0 110px;
+}
+
+.comment-content{
+    line-height: 1.5;
+    color: #89959b;
+    margin: 0 110px;
+}
+.comment-author {
+    font-size: 0.80rem;
+    line-height: 1.4rem;
+    margin: 0 110px;
+}

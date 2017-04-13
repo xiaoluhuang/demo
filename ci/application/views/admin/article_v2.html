@@ -1,0 +1,80 @@
+<div class="main-content">
+    <div class="main-content-inner">
+        <div class="breadcrumbs ace-save-state" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a></li>
+                <li><a href="#">Other Pages</a></li>
+                <li class="active">Blank Page</li>
+            </ul>
+            <!-- /.breadcrumb -->
+            <div class="nav-search" id="nav-search">
+                <form class="form-search">
+                    <span class="input-icon">
+                        <input type="text" placeholder="Search ..." class="nav-search-input"
+                               id="nav-search-input" autocomplete="off"/> <i
+                            class="ace-icon fa fa-search nav-search-icon"></i> </span>
+                </form>
+            </div>
+            <!-- /.nav-search -->
+        </div>
+        <div class="page-content">
+            <!-- /.ace-settings-container -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="widget-main">
+                        <div>
+                            <label class="control-label bolder blue">标题</label>
+                            <input type="text" placeholder="标题" class="form-control col-xs-10 col-sm-5">
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+
+                        <div>
+                            <!--<label for="form-field-2"></label>-->
+                            <div class="control-group">
+                                <label class="control-label bolder blue">类型</label>
+
+                                <div class="radio">
+                                    <label>
+                                        <input <?php echo set_radio('type','0',TRUE)?> name="form-field-radio" type="radio" class="ace">
+                                        <span class="lbl"> 普通 </span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input <?= set_radio('type','1')?> name="form-field-radio" type="radio" class="ace">
+                                        <span class="lbl"> 热门 </span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+
+                        <div>
+                            <label for="form-field-9">With Character Limit</label>
+
+                            <textarea class="form-control limited" id="form-field-9" maxlength="50"></textarea>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <label for="form-field-11">Autosize</label>
+
+                            <textarea id="form-field-11" class="autosize-transition form-control" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 52px;"></textarea>
+                        </div>
+                    </div>
+                    <!-- PAGE CONTENT ENDS -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.page-content -->
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<div>
+    <form action="<?= site_url('admin/login/login_in')?>" method="post" id="login">
+        <input type="text" id="userName" name="username"/>
+        <input type="password" id="psd" name="passwd"/>
+        <input type="" value="" id="verify" name="captcha"/>
+        <input type="submit" id="sub" value="登录"/>
+        <!--验证码-->
+        <div><?= $captcha?></div>
+    </form>
+    <a href="<?= site_url('admin/login/login_out')?>">退出</a>
+</div>
+</body>
+</html>

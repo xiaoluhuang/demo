@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" >
+    <title>查看文章</title>
+</head>
+<body>
+<div>
+    <li><a href="http://ci.dev/admin/article/send_article" >发表文章</a></li>
+    <li><a href="<?= site_url('admin/article/index')?>" >查看文章</a></li>
+    <li><a href="http://ci.dev/admin/category/add_cate" >添加栏目</a></li>
+    <li><a href="http://ci.dev/admin/category/index" >查看栏目</a></li>
+</div>
+<hr>
+    <table class="table">
+        <tr>
+            <td class="th">查看文章</td>
+        </tr>
+        <tr>
+            <td>AID</td>
+            <td>标题</td>
+            <td>栏目</td>
+            <td>时间</td>
+            <td>操作</td>
+        </tr>
+        <?php foreach($article as $v):?>
+        <tr>
+            <td><?= $v['aid']?></td>
+            <td><?= $v['title']?></td>
+            <td><?= $v['cname']?></td>
+            <td><?= date('m-d',$v['time'])?></td>
+            <td>
+               [ <a href="<?= site_url('admin/article/edit_article/'.$v['aid'])?>">编辑文章</a>]
+               [ <a href="<?= site_url('admin/article/del/'.$v['aid'])?>">删除文章</a>]
+            </td>
+        </tr>
+        <?php endforeach?>
+    </table>
+<div>
+    <?php echo $links?>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.title {
+    font-size: 28px;
+    word-break: break-all;
+    color: #A00;
+    font-weight: bold;
+}
+
+.content {
+    background-color: rgba(70, 57, 57, 0.07);
+    font-size: 28px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/html">
+    <script type="text/javascript" scr="<?= base_url()?>utf8-php/ueditor.all.min.js"></script>
+    <script type="text/javascript">
+        window.UEDITOR_HOME_URL = "<?= base_url()?>utf8-php/";
+        window.onload = function () {
+            window.UEDITOR_CONFIG.initialFrameWidth =900;
+            window.UEDITOR_CONFIG.initialFrameHeight =600;
+            UE.getEditor('content');
+        }
+    </script>
+    <script type="text/javascript" scr="<?= base_url()?>utf8-php/ueditor.config.js"></script>
+    <title>博客文章发布</title>
+</head>
+<body>
+<div>
+    <li><a href="http://ci.dev/admin/article/send_article" >发表文章</a></li>
+    <li><a href="<?= site_url('admin/article/index')?>" >查看文章</a></li>
+    <li><a href="http://ci.dev/admin/category/add_cate" >添加栏目</a></li>
+    <li><a href="http://ci.dev/admin/category/index" >查看栏目</a></li>
+</div>
+<hr>
+<form action="<?php echo site_url('admin/article/send') ?>" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td colspan="10">发表文章</td>
+        </tr>
+        <tr>
+            <td>标题</td>
+            <td><input type="text" name="title" value="<?= set_value('title')?>"/>
+                <?php echo form_error('title')?>
+            </td>
+        </tr>
+        <tr>
+            <td>类型</td>
+            <td><input type="radio" name="type" value="0" <?php echo set_radio('type','0',TRUE)?>/>普通
+                <input type="radio" name="type" value="1" <?= set_radio('type','1')?>/>热门
+            </td>
+        </tr>
+        <tr>
+            <td>栏目</td>
+            <td><select name="cid" id="">
+                <?php foreach($category as $v):?>
+                <option value="<?php echo $v['cid']?>"  <?php echo set_select('cid','1',TRUE)?>><?php echo $v['cname']?></option>
+                <?php endforeach?>
+                </select>
+            </td>
+        </tr>
+        <!--<tr>-->
+            <!--<td>缩略图</td>-->
+            <!--<td><input type="file" name="thumb"/>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <tr>
+            <td>摘要</td>
+            <td><textarea name="info" id="" style="width: 550px;height: 160px;"><?= set_value('info')?></textarea>
+            <?= form_error('info')?>
+            </td>
+        </tr>
+        <tr>
+            <td>内容</td>
+            <td><textarea name="content" id="content" style="width: 550px;height: 300px;"><?= set_value('content')?></textarea>
+                <?= form_error('content')?>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="10"><input type="submit" class="input_button" value="发布"></td>
+
+        </tr>
+
+    </table>
+
+</form>
+</body>
+</html>

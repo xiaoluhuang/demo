@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看栏目</title>
+</head>
+<body>
+<div>
+    <li><a href="http://ci.dev/admin/article/send_article" >发表文章</a></li>
+    <li><a href="<?= site_url('admin/article/index')?>" >查看文章</a></li>
+    <li><a href="http://ci.dev/admin/category/add_cate" >添加栏目</a></li>
+    <li><a href="http://ci.dev/admin/category/index" >查看栏目</a></li>
+</div>
+<hr>
+<table class="table">
+    <tr>
+        <td class="th" colspan="10">查看栏目</td>
+    </tr>
+    <tr>
+        <td>CID</td>
+        <td>栏目名称</td>
+        <td>操作</td>
+    </tr>
+    <?php foreach($category as $v):?>
+    <tr>
+        <td><?php echo $v['cid']?></td>
+        <td><?php echo $v['cname']?></td>
+        <td>
+            [<a href="<?= site_url('admin/category/edit_cate/'.$v['cid'])?>">编辑</a>]
+            [<a href="<?= site_url('admin/category/del/'.$v['cid'])?>">删除</a>]
+        </td>
+    </tr>
+    <?php endforeach?>
+</table>
+</body>
+</html>
