@@ -15,4 +15,4 @@ $id = $_GET['user_id'];
 $blog = new Blog();
 $insert = $blog->add($title, $quote, $content, $id);
 
-echo "博客提交成功!再写一篇吧!";
+//echo "博客提交成功!再写一篇吧!";
