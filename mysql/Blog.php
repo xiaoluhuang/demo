@@ -67,10 +67,10 @@ class Blog extends Db
     private function _format($fetchData)
     {
         $data = [];
-        foreach ($fetchData as $item) {//item这个变量是什么呢?
+        foreach ($fetchData as $item) {
             $data[] = $item;
         }
-        return $data;//为什么这样返回的就是ID呢?
+        return $data;
     }
 
 
