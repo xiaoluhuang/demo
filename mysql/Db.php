@@ -31,10 +31,33 @@ class Db
      * @param $sql
      * @return bool|mysqli_result
      */
-    protected function query($sql) {
+    protected function query($sql)
+    {
         return $this->mysqli->query($sql);
     }
 
 
+    /**
+     * @param $table article
+     * @param $data ['title' => 'a title', 'content' => 'this is a content',]
+     * @return string
+     */
+    public function getInsertSql($table, $data)
+    {
+
+//        $sql = "insert into article (title, content) values('a title', 'this is a content')"php;
+        $a = array_keys($data);
+        $keys = implode(',',$a);
+        $b = array_values($data);
+        $values = implode("','",$b);
+        $sql = 'insert  into ' . $table . "($keys)" .' values' . "('$values')";
+
+//
+
+        return $sql;
+    }
 }
 
+$db = new Db();
+$sql = $db->getInsertSql('table', ['title' => 'a title', 'content' => 'this is a content',]);
+echo $sql,PHP_EOL;

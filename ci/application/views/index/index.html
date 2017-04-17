@@ -1,108 +1,202 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-
-Name       : Natures Charm
-Description: A two-column, fixed-width design.
-Version    : 1.0
-Released   : 20080125
-
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>vivian's blog</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="/style/css/default.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta charset="utf-8">
+    <title>Welcome to Vivian's blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="<?= base_url().'style/'?>css/bootstrap.min.css">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="<?= base_url().'style/'?>css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="<?= base_url().'style/'?>css/style.css" id="theme-styles">
+
+    <!--[if lt IE 9]>
+        <script src="<?= base_url().'style/'?>js/respond.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-<!-- start header -->
-<div id="header">
-	<div id="logo">
-		<h1><a href="#">nature's charm </a></h1>
-		<h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
-	</div>
-	<div id="menu">
-		<ul>
-			<li class="active"><a href="#" accesskey="1" title="">Home</a></li>
-			<li><a href="#" accesskey="2" title="">Blog</a></li>
-			<li><a href="#" accesskey="3" title="">Photos</a></li>
-			<li><a href="#" accesskey="4" title="">About</a></li>
-			<li><a href="#" accesskey="5" title="">Contact</a></li>
-		</ul>
-	</div>
-</div>
-<!-- end header -->
-<div id="gallery">
-	<div id="top-photo">
-		<p><a href="#"><img src="style/images/img08.jpg" alt="" width="830" height="300" /></a></p>
-	</div>
-</div>
+    <header>
+        <div class="widewrapper masthead">
+            <div class="container">
+                <a href="index.html" id="logo">
+                    <img src="<?= base_url().'style/'?>images/logo.png" alt="clean Blog">
+                </a>
 
-<!-- start page -->
-<div id="page">
-	<!-- start content -->
-	<div id="content">
-		<div class="post">
-			<h1 class="title">Welcome to My Website</h1>
-			<p class="byline"><small>Posted on August 25th, 2007 by <a href="#">admin</a> | <a href="#">Edit</a></small></p>
-			<div class="entry">
-				<p><strong>Nature's Charm</strong> is a free template from <a href="http://freecsstemplates.org/">Free CSS Templates</a> released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</a>. The flower photo is fromt <a href="http://www.pdphoto.org/">PDPhoto.org</a>. You're free to use this template for both commercial or personal use. I only ask that you link back to <a href="http://freecsstemplates.org/">my site</a> in some way. Enjoy :)</p>
-			</div>
-			<p class="meta"><a href="#" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="#" class="comments">Comments (33)</a></p>
-		</div>
-		<div class="post">
-			<h2 class="title">Risus Pellentesque Pharetra</h2>
-			<p class="byline"><small>Posted on August 25th, 2007 by <a href="#">admin</a> | <a href="#">Edit</a></small></p>
-			<div class="entry">
-				<blockquote>
-					<p>&#8220;Praesent augue mauris, accumsan eget, ornare quis, consequat malesuada, leo.&#8221;</p>
-				</blockquote>
-				<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante.</p>
-			</div>
-			<p class="meta"><a href="#" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="#" class="comments">Comments (33)</a></p>
-		</div>
-	</div>
-	<!-- end content -->
-	<!-- start sidebar -->
-	<div id="sidebar">
-		<ul>
-			<li>
-				<h2>Categories</h2>
-				<ul>
-					<li><a href="#">Aliquam libero</a></li>
-					<li><a href="#">Consectetuer adipiscing elit</a></li>
-					<li><a href="#">metus aliquam pellentesque</a></li>
-					<li><a href="#">Suspendisse iaculis mauris</a></li>
-					<li><a href="#">Urnanet non molestie semper</a></li>
-					<li><a href="#">Proin gravida orci porttitor</a></li>
-				</ul>
-			</li>
-			<li>
-				<h2>Archives</h2>
-				<ul>
-					<li><a href="#">September</a> (23)</li>
-					<li><a href="#">August</a> (31)</li>
-					<li><a href="#">July</a> (31)</li>
-					<li><a href="#">June</a> (30)</li>
-					<li><a href="#">May</a> (31)</li>
-					<li><a href="#">April</a> (30)</li>
-					<li><a href="#">March</a> (31)</li>
-					<li><a href="#">February</a> (28)</li>
-					<li><a href="#">January</a> (31)</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<!-- end sidebar -->
-</div>
-<div style="clear: both; height: 30px">&nbsp;</div>
-<!-- end page -->
-<div id="footer">
-	<p>&copy;2007 All Rights Reserved. &nbsp;&bull;&nbsp; Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
-</div>
+                <div id="mobile-nav-toggle" class="pull-right">
+                    <a href="#" data-toggle="collapse" data-target=".clean-nav .navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <nav class="pull-right clean-nav">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav nav-pills navbar-nav">
+
+                            <li>
+                                <a href="<?= site_url('index/home/index')?>">Home</a>
+                            </li>
+                            <li>
+                                <a href="<?= site_url('index/home/about')?>">About</a>
+                            </li>
+                            <li>
+                                <a href="<?= site_url('index/home/contact')?>">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="widewrapper subheader">
+            <div class="container">
+                <div class="clean-breadcrumb">
+                    <a href="#">Blog</a>
+                </div>
+
+                <div class="clean-searchbox">
+                    <form action="#" method="get" accept-charset="utf-8">
+                        <input class="searchfield" id="searchbox" type="text" placeholder="Search">
+                        <button class="searchbutton" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="widewrapper main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+                     <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article class=" blog-teaser">
+                                <header>
+                                    <img src="<?= base_url().'style/'?>images/5.jpg" alt="">
+                                    <?php foreach($article as $v):?>
+                                    <h3><a href="<?= site_url('index/home/single/'.$v['aid'])?>"><?= $v['title']?></a></h3>
+                                    <span class="meta"><?= $v['time']?></span>
+                                    <hr>
+                                    <?php endforeach?>
+                                </header>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        <a href="#" class="older">Older Post</i></a>
+                    </div>
+                </div>
+                <div>
+                    <?= $links?>
+                </div>
+                <aside class="col-md-4 blog-aside">
+
+                    <div class="aside-widget">
+                        <header>
+                            <h3>Featured Post</h3>
+                        </header>
+                        <div class="body">
+                            <ul class="clean-list">
+                                <li><a href="">Clean - Responsive HTML5 Template</a></li>
+                                <li><a href="">Responsive Pricing Table</a></li>
+                                <li><a href="">Yellow HTML5 Template</a></li>
+                                <li><a href="">Blackor Responsive Theme</a></li>
+                                <li><a href="">Portfolio Bootstrap Template</a></li>
+                                <li><a href="">Clean Slider Template</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="aside-widget">
+                        <header>
+                            <h3>Related Post</h3>
+                        </header>
+                        <div class="body">
+                            <ul class="clean-list">
+                                <li><a href="">Blackor Responsive Theme</a></li>
+                                <li><a href="">Portfolio Bootstrap Template</a></li>
+                                <li><a href="">Clean Slider Template</a></li>
+                                <li><a href="">Clean - Responsive HTML5 Template</a></li>
+                                <li><a href="">Responsive Pricing Table</a></li>
+                                <li><a href="">Yellow HTML5 Template</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="aside-widget">
+                        <header>
+                            <h3>Tags</h3>
+                        </header>
+                        <div class="body clearfix">
+                            <ul class="tags">
+                                <li><a href="#">HTML5</a></li>
+                                <li><a href="#">CSS3</a></li>
+                                <li><a href="#">COMPONENTS</a></li>
+                                <li><a href="#">TEMPLATE</a></li>
+                                <li><a href="#">PLUGIN</a></li>
+                                <li><a href="#">BOOTSTRAP</a></li>
+                                <li><a href="#">TUTORIAL</a></li>
+                                <li><a href="#">UI/UX</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="widewrapper footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-user"></i>About</h3>
+
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi laboriosam nostrum consequatur fugiat at, labore praesentium modi, quasi dolorum debitis reiciendis facilis, dolor saepe sint nemo, earum molestias quas.</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, error aspernatur assumenda quae eveniet.</p>
+                    </div>
+
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-pencil"></i> Recent Post</h3>
+                        <ul class="clean-list">
+                            <li><a href="">Clean - Responsive HTML5 Template</a></li>
+                            <li><a href="">Responsive Pricing Table</a></li>
+                            <li><a href="">Yellow HTML5 Template</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-envelope"></i>Contact Me</h3>
+
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugiat, cupiditate veritatis excepturi tempore explicabo.</p>
+                         <div class="footer-widget-icon">
+                            <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="widewrapper copyright">
+                Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+        </div>
+    </footer>
+
+    <script src="<?= base_url().'style/'?>js/jquery.min.js"></script>
+    <script src="<?= base_url().'style/'?>js/bootstrap.min.js"></script>
+    <script src="<?= base_url().'style/'?>js/modernizr.js"></script>
+
 </body>
 </html>

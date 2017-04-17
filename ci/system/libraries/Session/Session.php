@@ -72,6 +72,7 @@ class CI_Session {
 		// No sessions under CLI
 		if (is_cli())
 		{
+//		    die('ggggg');
 			log_message('debug', 'Session: Initialization under CLI aborted.');
 			return;
 		}
@@ -743,6 +744,7 @@ class CI_Session {
 			$this->get_temp_keys()
 		);
 
+        var_dump($_exclude);
 		foreach (array_keys($_SESSION) as $key)
 		{
 			if ( ! in_array($key, $_exclude, TRUE))

@@ -116,6 +116,7 @@ if (!function_exists('is_really_writable')) {
 // ------------------------------------------------------------------------
 
 if (!function_exists('load_class')) {
+
     /**
      * Class registry
      *
@@ -133,6 +134,7 @@ if (!function_exists('load_class')) {
         static $_classes = array();
 
         // Does the class exist? If so, we're done...
+        // AA
         if (isset($_classes[$class])) {
             return $_classes[$class];
         }
@@ -145,6 +147,7 @@ if (!function_exists('load_class')) {
             if (file_exists($path . $directory . '/' . $class . '.php')) {
                 $name = 'CI_' . $class;
 
+                // AA
                 if (class_exists($name, FALSE) === FALSE) {
                     require_once($path . $directory . '/' . $class . '.php');
                 }

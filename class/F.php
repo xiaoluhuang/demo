@@ -9,6 +9,8 @@
 
 class F {
 
+    public $name;
+
     function set($name) {
         $this->name = $name;
     }
@@ -20,4 +22,6 @@ class F {
 
 $f = new F();
 $f->set('huangxiaolu');
+var_dump($f->get());
+$f->name = 'wushuiyong';
 var_dump($f->get());

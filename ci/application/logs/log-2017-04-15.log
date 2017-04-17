@@ -1,0 +1,971 @@
+INFO - 2017-04-15 12:16:29 --> Config Class Initialized
+INFO - 2017-04-15 12:16:29 --> Hooks Class Initialized
+INFO - 2017-04-15 12:16:29 --> UTF-8 Support Enabled
+INFO - 2017-04-15 12:16:29 --> Utf8 Class Initialized
+INFO - 2017-04-15 12:16:29 --> URI Class Initialized
+INFO - 2017-04-15 12:16:29 --> Router Class Initialized
+INFO - 2017-04-15 12:16:29 --> Output Class Initialized
+INFO - 2017-04-15 12:16:29 --> Security Class Initialized
+INFO - 2017-04-15 12:16:29 --> Input Class Initialized
+INFO - 2017-04-15 12:16:29 --> Language Class Initialized
+INFO - 2017-04-15 12:16:29 --> Loader Class Initialized
+INFO - 2017-04-15 12:16:29 --> Helper loaded: url_helper
+INFO - 2017-04-15 12:16:29 --> Database Driver Class Initialized
+DEBUG - 2017-04-15 12:16:29 --> Session: Initialization under CLI aborted.
+INFO - 2017-04-15 12:16:29 --> Controller Class Initialized
+INFO - 2017-04-15 12:16:29 --> Model Class Initialized
+INFO - 2017-04-15 12:16:29 --> Model Class Initialized
+INFO - 2017-04-15 12:16:29 --> Model Class Initialized
+INFO - 2017-04-15 16:22:30 --> Config Class Initialized
+INFO - 2017-04-15 16:22:30 --> Hooks Class Initialized
+INFO - 2017-04-15 16:22:30 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:22:30 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:22:30 --> URI Class Initialized
+INFO - 2017-04-15 16:22:30 --> Router Class Initialized
+INFO - 2017-04-15 16:22:30 --> Output Class Initialized
+INFO - 2017-04-15 16:22:30 --> Security Class Initialized
+INFO - 2017-04-15 16:22:30 --> Input Class Initialized
+INFO - 2017-04-15 16:22:30 --> Language Class Initialized
+INFO - 2017-04-15 16:22:30 --> Loader Class Initialized
+INFO - 2017-04-15 16:22:30 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:22:30 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:22:30 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:22:30 --> Controller Class Initialized
+INFO - 2017-04-15 16:22:30 --> Model Class Initialized
+INFO - 2017-04-15 16:22:30 --> Model Class Initialized
+INFO - 2017-04-15 16:22:30 --> Model Class Initialized
+INFO - 2017-04-15 16:22:34 --> Config Class Initialized
+INFO - 2017-04-15 16:22:34 --> Hooks Class Initialized
+INFO - 2017-04-15 16:22:34 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:22:34 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:22:34 --> URI Class Initialized
+INFO - 2017-04-15 16:22:34 --> Router Class Initialized
+INFO - 2017-04-15 16:22:34 --> Output Class Initialized
+INFO - 2017-04-15 16:22:34 --> Security Class Initialized
+INFO - 2017-04-15 16:22:34 --> Input Class Initialized
+INFO - 2017-04-15 16:22:34 --> Language Class Initialized
+INFO - 2017-04-15 16:22:34 --> Loader Class Initialized
+INFO - 2017-04-15 16:22:34 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:22:34 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:22:34 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:22:34 --> Controller Class Initialized
+INFO - 2017-04-15 16:22:34 --> Model Class Initialized
+INFO - 2017-04-15 16:22:34 --> Model Class Initialized
+INFO - 2017-04-15 16:22:34 --> Model Class Initialized
+INFO - 2017-04-15 16:23:21 --> Config Class Initialized
+INFO - 2017-04-15 16:23:21 --> Hooks Class Initialized
+INFO - 2017-04-15 16:23:21 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:23:21 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:23:21 --> URI Class Initialized
+INFO - 2017-04-15 16:23:21 --> Router Class Initialized
+INFO - 2017-04-15 16:23:21 --> Output Class Initialized
+INFO - 2017-04-15 16:23:21 --> Security Class Initialized
+INFO - 2017-04-15 16:23:21 --> Input Class Initialized
+INFO - 2017-04-15 16:23:21 --> Language Class Initialized
+INFO - 2017-04-15 16:23:21 --> Loader Class Initialized
+INFO - 2017-04-15 16:23:21 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:23:21 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:23:21 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:23:21 --> Controller Class Initialized
+INFO - 2017-04-15 16:23:21 --> Model Class Initialized
+INFO - 2017-04-15 16:23:21 --> Model Class Initialized
+INFO - 2017-04-15 16:23:21 --> Model Class Initialized
+INFO - 2017-04-15 16:23:21 --> Config Class Initialized
+INFO - 2017-04-15 16:23:21 --> Hooks Class Initialized
+INFO - 2017-04-15 16:23:21 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:23:21 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:23:21 --> URI Class Initialized
+INFO - 2017-04-15 16:23:21 --> Router Class Initialized
+INFO - 2017-04-15 16:23:21 --> Output Class Initialized
+INFO - 2017-04-15 16:23:21 --> Security Class Initialized
+INFO - 2017-04-15 16:23:21 --> Input Class Initialized
+INFO - 2017-04-15 16:23:21 --> Language Class Initialized
+ERROR - 2017-04-15 16:23:21 --> 404 Page Not Found: Faviconico/index
+INFO - 2017-04-15 16:24:13 --> Config Class Initialized
+INFO - 2017-04-15 16:24:13 --> Hooks Class Initialized
+INFO - 2017-04-15 16:24:13 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:24:13 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:24:13 --> URI Class Initialized
+INFO - 2017-04-15 16:24:13 --> Router Class Initialized
+INFO - 2017-04-15 16:24:13 --> Output Class Initialized
+INFO - 2017-04-15 16:24:13 --> Security Class Initialized
+INFO - 2017-04-15 16:24:13 --> Input Class Initialized
+INFO - 2017-04-15 16:24:13 --> Language Class Initialized
+INFO - 2017-04-15 16:24:13 --> Loader Class Initialized
+INFO - 2017-04-15 16:24:13 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:24:13 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:24:13 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:24:13 --> Controller Class Initialized
+INFO - 2017-04-15 16:24:13 --> Helper loaded: captcha_helper
+INFO - 2017-04-15 16:24:13 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/login_v2.html
+INFO - 2017-04-15 16:24:13 --> Final output sent to browser
+INFO - 2017-04-15 16:24:13 --> Total execution time: 0.0630
+INFO - 2017-04-15 16:24:17 --> Config Class Initialized
+INFO - 2017-04-15 16:24:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:24:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:24:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:24:17 --> URI Class Initialized
+INFO - 2017-04-15 16:24:17 --> Router Class Initialized
+INFO - 2017-04-15 16:24:17 --> Output Class Initialized
+INFO - 2017-04-15 16:24:17 --> Security Class Initialized
+INFO - 2017-04-15 16:24:17 --> Input Class Initialized
+INFO - 2017-04-15 16:24:17 --> Language Class Initialized
+INFO - 2017-04-15 16:24:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:24:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:24:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:24:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:24:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:24:17 --> Model Class Initialized
+INFO - 2017-04-15 16:24:17 --> Model Class Initialized
+INFO - 2017-04-15 16:24:17 --> Model Class Initialized
+INFO - 2017-04-15 16:24:43 --> Config Class Initialized
+INFO - 2017-04-15 16:24:43 --> Hooks Class Initialized
+INFO - 2017-04-15 16:24:43 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:24:43 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:24:43 --> URI Class Initialized
+INFO - 2017-04-15 16:24:43 --> Router Class Initialized
+INFO - 2017-04-15 16:24:43 --> Output Class Initialized
+INFO - 2017-04-15 16:24:43 --> Security Class Initialized
+INFO - 2017-04-15 16:24:43 --> Input Class Initialized
+INFO - 2017-04-15 16:24:43 --> Language Class Initialized
+INFO - 2017-04-15 16:24:43 --> Loader Class Initialized
+INFO - 2017-04-15 16:24:43 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:24:43 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:24:43 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:24:43 --> Controller Class Initialized
+INFO - 2017-04-15 16:24:43 --> Helper loaded: captcha_helper
+INFO - 2017-04-15 16:24:43 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/login_v2.html
+INFO - 2017-04-15 16:24:43 --> Final output sent to browser
+INFO - 2017-04-15 16:24:43 --> Total execution time: 0.0270
+INFO - 2017-04-15 16:24:59 --> Config Class Initialized
+INFO - 2017-04-15 16:24:59 --> Hooks Class Initialized
+INFO - 2017-04-15 16:24:59 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:24:59 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:24:59 --> URI Class Initialized
+INFO - 2017-04-15 16:24:59 --> Router Class Initialized
+INFO - 2017-04-15 16:24:59 --> Output Class Initialized
+INFO - 2017-04-15 16:24:59 --> Security Class Initialized
+INFO - 2017-04-15 16:24:59 --> Input Class Initialized
+INFO - 2017-04-15 16:24:59 --> Language Class Initialized
+INFO - 2017-04-15 16:24:59 --> Loader Class Initialized
+INFO - 2017-04-15 16:24:59 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:24:59 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:24:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:24:59 --> Controller Class Initialized
+INFO - 2017-04-15 16:24:59 --> Model Class Initialized
+INFO - 2017-04-15 16:25:03 --> Config Class Initialized
+INFO - 2017-04-15 16:25:03 --> Hooks Class Initialized
+INFO - 2017-04-15 16:25:03 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:25:03 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:25:03 --> URI Class Initialized
+INFO - 2017-04-15 16:25:03 --> Router Class Initialized
+INFO - 2017-04-15 16:25:03 --> Output Class Initialized
+INFO - 2017-04-15 16:25:03 --> Security Class Initialized
+INFO - 2017-04-15 16:25:03 --> Input Class Initialized
+INFO - 2017-04-15 16:25:03 --> Language Class Initialized
+INFO - 2017-04-15 16:25:03 --> Loader Class Initialized
+INFO - 2017-04-15 16:25:03 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:25:03 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:25:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:25:03 --> Controller Class Initialized
+INFO - 2017-04-15 16:25:03 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/head.html
+INFO - 2017-04-15 16:25:03 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/content.html
+INFO - 2017-04-15 16:25:03 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/foot.html
+INFO - 2017-04-15 16:25:03 --> Final output sent to browser
+INFO - 2017-04-15 16:25:03 --> Total execution time: 0.0212
+INFO - 2017-04-15 16:25:06 --> Config Class Initialized
+INFO - 2017-04-15 16:25:06 --> Hooks Class Initialized
+INFO - 2017-04-15 16:25:06 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:25:06 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:25:06 --> URI Class Initialized
+INFO - 2017-04-15 16:25:06 --> Router Class Initialized
+INFO - 2017-04-15 16:25:06 --> Output Class Initialized
+INFO - 2017-04-15 16:25:06 --> Security Class Initialized
+INFO - 2017-04-15 16:25:06 --> Input Class Initialized
+INFO - 2017-04-15 16:25:06 --> Language Class Initialized
+INFO - 2017-04-15 16:25:06 --> Loader Class Initialized
+INFO - 2017-04-15 16:25:06 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:25:06 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:25:06 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:25:06 --> Controller Class Initialized
+INFO - 2017-04-15 16:25:06 --> Model Class Initialized
+INFO - 2017-04-15 16:25:06 --> Model Class Initialized
+INFO - 2017-04-15 16:25:06 --> Helper loaded: form_helper
+INFO - 2017-04-15 16:25:06 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/article.html
+INFO - 2017-04-15 16:25:06 --> Final output sent to browser
+INFO - 2017-04-15 16:25:06 --> Total execution time: 0.0255
+INFO - 2017-04-15 16:25:17 --> Config Class Initialized
+INFO - 2017-04-15 16:25:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:25:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:25:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:25:17 --> URI Class Initialized
+INFO - 2017-04-15 16:25:17 --> Router Class Initialized
+INFO - 2017-04-15 16:25:17 --> Output Class Initialized
+INFO - 2017-04-15 16:25:17 --> Security Class Initialized
+INFO - 2017-04-15 16:25:17 --> Input Class Initialized
+INFO - 2017-04-15 16:25:17 --> Language Class Initialized
+INFO - 2017-04-15 16:25:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:25:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:25:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:25:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:25:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:25:17 --> Model Class Initialized
+INFO - 2017-04-15 16:25:17 --> Model Class Initialized
+INFO - 2017-04-15 16:25:17 --> Model Class Initialized
+INFO - 2017-04-15 16:25:19 --> Config Class Initialized
+INFO - 2017-04-15 16:25:19 --> Hooks Class Initialized
+INFO - 2017-04-15 16:25:19 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:25:19 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:25:19 --> URI Class Initialized
+INFO - 2017-04-15 16:25:19 --> Router Class Initialized
+INFO - 2017-04-15 16:25:19 --> Output Class Initialized
+INFO - 2017-04-15 16:25:19 --> Security Class Initialized
+INFO - 2017-04-15 16:25:19 --> Input Class Initialized
+INFO - 2017-04-15 16:25:19 --> Language Class Initialized
+INFO - 2017-04-15 16:25:19 --> Loader Class Initialized
+INFO - 2017-04-15 16:25:19 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:25:19 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:25:19 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:25:19 --> Controller Class Initialized
+INFO - 2017-04-15 16:25:19 --> Model Class Initialized
+INFO - 2017-04-15 16:25:19 --> Model Class Initialized
+INFO - 2017-04-15 16:25:19 --> Model Class Initialized
+INFO - 2017-04-15 16:25:45 --> Config Class Initialized
+INFO - 2017-04-15 16:25:45 --> Hooks Class Initialized
+INFO - 2017-04-15 16:25:45 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:25:45 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:25:45 --> URI Class Initialized
+INFO - 2017-04-15 16:25:45 --> Router Class Initialized
+INFO - 2017-04-15 16:25:45 --> Output Class Initialized
+INFO - 2017-04-15 16:25:45 --> Security Class Initialized
+INFO - 2017-04-15 16:25:46 --> Input Class Initialized
+INFO - 2017-04-15 16:25:46 --> Language Class Initialized
+INFO - 2017-04-15 16:25:46 --> Loader Class Initialized
+INFO - 2017-04-15 16:25:46 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:25:46 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:25:46 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:25:46 --> Controller Class Initialized
+INFO - 2017-04-15 16:25:46 --> Model Class Initialized
+INFO - 2017-04-15 16:25:46 --> Model Class Initialized
+INFO - 2017-04-15 16:25:46 --> Model Class Initialized
+INFO - 2017-04-15 16:25:53 --> Config Class Initialized
+INFO - 2017-04-15 16:25:53 --> Hooks Class Initialized
+INFO - 2017-04-15 16:25:53 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:25:53 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:25:53 --> URI Class Initialized
+INFO - 2017-04-15 16:25:53 --> Router Class Initialized
+INFO - 2017-04-15 16:25:53 --> Output Class Initialized
+INFO - 2017-04-15 16:25:53 --> Security Class Initialized
+INFO - 2017-04-15 16:25:53 --> Input Class Initialized
+INFO - 2017-04-15 16:25:53 --> Language Class Initialized
+INFO - 2017-04-15 16:25:53 --> Loader Class Initialized
+INFO - 2017-04-15 16:25:53 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:25:53 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:25:53 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:25:53 --> Controller Class Initialized
+INFO - 2017-04-15 16:25:53 --> Model Class Initialized
+INFO - 2017-04-15 16:25:53 --> Model Class Initialized
+INFO - 2017-04-15 16:25:53 --> Model Class Initialized
+INFO - 2017-04-15 16:28:03 --> Config Class Initialized
+INFO - 2017-04-15 16:28:03 --> Hooks Class Initialized
+INFO - 2017-04-15 16:28:03 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:28:03 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:28:03 --> URI Class Initialized
+INFO - 2017-04-15 16:28:03 --> Router Class Initialized
+INFO - 2017-04-15 16:28:03 --> Output Class Initialized
+INFO - 2017-04-15 16:28:03 --> Security Class Initialized
+INFO - 2017-04-15 16:28:03 --> Input Class Initialized
+INFO - 2017-04-15 16:28:03 --> Language Class Initialized
+INFO - 2017-04-15 16:28:03 --> Loader Class Initialized
+INFO - 2017-04-15 16:28:03 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:28:03 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:28:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:28:03 --> Controller Class Initialized
+INFO - 2017-04-15 16:28:03 --> Model Class Initialized
+INFO - 2017-04-15 16:28:03 --> Model Class Initialized
+INFO - 2017-04-15 16:28:03 --> Model Class Initialized
+INFO - 2017-04-15 16:28:13 --> Config Class Initialized
+INFO - 2017-04-15 16:28:13 --> Hooks Class Initialized
+INFO - 2017-04-15 16:28:13 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:28:13 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:28:13 --> URI Class Initialized
+INFO - 2017-04-15 16:28:13 --> Router Class Initialized
+INFO - 2017-04-15 16:28:13 --> Output Class Initialized
+INFO - 2017-04-15 16:28:13 --> Security Class Initialized
+INFO - 2017-04-15 16:28:13 --> Input Class Initialized
+INFO - 2017-04-15 16:28:13 --> Language Class Initialized
+INFO - 2017-04-15 16:28:13 --> Loader Class Initialized
+INFO - 2017-04-15 16:28:13 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:28:13 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:28:13 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:28:13 --> Controller Class Initialized
+INFO - 2017-04-15 16:28:13 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/head.html
+INFO - 2017-04-15 16:28:13 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/content.html
+INFO - 2017-04-15 16:28:13 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/foot.html
+INFO - 2017-04-15 16:28:13 --> Final output sent to browser
+INFO - 2017-04-15 16:28:13 --> Total execution time: 0.0223
+INFO - 2017-04-15 16:28:14 --> Config Class Initialized
+INFO - 2017-04-15 16:28:14 --> Hooks Class Initialized
+INFO - 2017-04-15 16:28:14 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:28:14 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:28:14 --> URI Class Initialized
+INFO - 2017-04-15 16:28:14 --> Router Class Initialized
+INFO - 2017-04-15 16:28:14 --> Output Class Initialized
+INFO - 2017-04-15 16:28:14 --> Security Class Initialized
+INFO - 2017-04-15 16:28:14 --> Input Class Initialized
+INFO - 2017-04-15 16:28:14 --> Language Class Initialized
+ERROR - 2017-04-15 16:28:14 --> 404 Page Not Found: Static/admin
+INFO - 2017-04-15 16:28:17 --> Config Class Initialized
+INFO - 2017-04-15 16:28:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:28:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:28:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:28:17 --> URI Class Initialized
+INFO - 2017-04-15 16:28:17 --> Router Class Initialized
+INFO - 2017-04-15 16:28:17 --> Output Class Initialized
+INFO - 2017-04-15 16:28:17 --> Security Class Initialized
+INFO - 2017-04-15 16:28:17 --> Input Class Initialized
+INFO - 2017-04-15 16:28:17 --> Language Class Initialized
+INFO - 2017-04-15 16:28:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:28:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:28:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:28:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:28:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:28:17 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/head.html
+INFO - 2017-04-15 16:28:17 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/content.html
+INFO - 2017-04-15 16:28:17 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/foot.html
+INFO - 2017-04-15 16:28:17 --> Final output sent to browser
+INFO - 2017-04-15 16:28:17 --> Total execution time: 0.0231
+INFO - 2017-04-15 16:28:18 --> Config Class Initialized
+INFO - 2017-04-15 16:28:18 --> Hooks Class Initialized
+INFO - 2017-04-15 16:28:18 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:28:18 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:28:18 --> URI Class Initialized
+INFO - 2017-04-15 16:28:18 --> Router Class Initialized
+INFO - 2017-04-15 16:28:18 --> Output Class Initialized
+INFO - 2017-04-15 16:28:18 --> Security Class Initialized
+INFO - 2017-04-15 16:28:18 --> Input Class Initialized
+INFO - 2017-04-15 16:28:18 --> Language Class Initialized
+ERROR - 2017-04-15 16:28:18 --> 404 Page Not Found: Static/admin
+INFO - 2017-04-15 16:31:20 --> Config Class Initialized
+INFO - 2017-04-15 16:31:20 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:20 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:20 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:20 --> URI Class Initialized
+INFO - 2017-04-15 16:31:20 --> Router Class Initialized
+INFO - 2017-04-15 16:31:20 --> Output Class Initialized
+INFO - 2017-04-15 16:31:20 --> Security Class Initialized
+INFO - 2017-04-15 16:31:20 --> Input Class Initialized
+INFO - 2017-04-15 16:31:20 --> Language Class Initialized
+INFO - 2017-04-15 16:31:20 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:20 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:20 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:20 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:20 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:20 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/head.html
+INFO - 2017-04-15 16:31:20 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/content.html
+INFO - 2017-04-15 16:31:20 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/foot.html
+INFO - 2017-04-15 16:31:20 --> Final output sent to browser
+INFO - 2017-04-15 16:31:20 --> Total execution time: 0.0422
+INFO - 2017-04-15 16:31:20 --> Config Class Initialized
+INFO - 2017-04-15 16:31:20 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:20 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:20 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:20 --> URI Class Initialized
+INFO - 2017-04-15 16:31:20 --> Router Class Initialized
+INFO - 2017-04-15 16:31:20 --> Output Class Initialized
+INFO - 2017-04-15 16:31:20 --> Security Class Initialized
+INFO - 2017-04-15 16:31:20 --> Input Class Initialized
+INFO - 2017-04-15 16:31:20 --> Language Class Initialized
+ERROR - 2017-04-15 16:31:20 --> 404 Page Not Found: Static/admin
+INFO - 2017-04-15 16:31:39 --> Config Class Initialized
+INFO - 2017-04-15 16:31:39 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:39 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:39 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:39 --> URI Class Initialized
+INFO - 2017-04-15 16:31:39 --> Router Class Initialized
+INFO - 2017-04-15 16:31:39 --> Output Class Initialized
+INFO - 2017-04-15 16:31:39 --> Security Class Initialized
+INFO - 2017-04-15 16:31:39 --> Input Class Initialized
+INFO - 2017-04-15 16:31:39 --> Language Class Initialized
+INFO - 2017-04-15 16:31:39 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:39 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:39 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:39 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:39 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:39 --> Model Class Initialized
+INFO - 2017-04-15 16:31:39 --> Model Class Initialized
+INFO - 2017-04-15 16:31:39 --> Helper loaded: form_helper
+INFO - 2017-04-15 16:31:39 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/article.html
+INFO - 2017-04-15 16:31:39 --> Final output sent to browser
+INFO - 2017-04-15 16:31:39 --> Total execution time: 0.0325
+INFO - 2017-04-15 16:31:41 --> Config Class Initialized
+INFO - 2017-04-15 16:31:41 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:41 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:41 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:41 --> URI Class Initialized
+INFO - 2017-04-15 16:31:42 --> Router Class Initialized
+INFO - 2017-04-15 16:31:42 --> Output Class Initialized
+INFO - 2017-04-15 16:31:42 --> Security Class Initialized
+INFO - 2017-04-15 16:31:42 --> Input Class Initialized
+INFO - 2017-04-15 16:31:42 --> Language Class Initialized
+INFO - 2017-04-15 16:31:42 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:42 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:42 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:42 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:42 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:42 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/head.html
+INFO - 2017-04-15 16:31:42 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/content.html
+INFO - 2017-04-15 16:31:42 --> File loaded: /Users/huangxiaolu/workspace/demo/ci/application/views/admin/foot.html
+INFO - 2017-04-15 16:31:42 --> Final output sent to browser
+INFO - 2017-04-15 16:31:42 --> Total execution time: 0.0212
+INFO - 2017-04-15 16:31:42 --> Config Class Initialized
+INFO - 2017-04-15 16:31:42 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:42 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:42 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:42 --> URI Class Initialized
+INFO - 2017-04-15 16:31:42 --> Router Class Initialized
+INFO - 2017-04-15 16:31:42 --> Output Class Initialized
+INFO - 2017-04-15 16:31:42 --> Security Class Initialized
+INFO - 2017-04-15 16:31:42 --> Input Class Initialized
+INFO - 2017-04-15 16:31:42 --> Language Class Initialized
+ERROR - 2017-04-15 16:31:42 --> 404 Page Not Found: Static/admin
+INFO - 2017-04-15 16:31:56 --> Config Class Initialized
+INFO - 2017-04-15 16:31:56 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:56 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:56 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:56 --> URI Class Initialized
+INFO - 2017-04-15 16:31:56 --> Router Class Initialized
+INFO - 2017-04-15 16:31:56 --> Output Class Initialized
+INFO - 2017-04-15 16:31:56 --> Security Class Initialized
+INFO - 2017-04-15 16:31:56 --> Input Class Initialized
+INFO - 2017-04-15 16:31:56 --> Language Class Initialized
+INFO - 2017-04-15 16:31:56 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:56 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:56 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:56 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:56 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:56 --> Model Class Initialized
+INFO - 2017-04-15 16:31:56 --> Model Class Initialized
+INFO - 2017-04-15 16:31:56 --> Model Class Initialized
+INFO - 2017-04-15 16:31:57 --> Config Class Initialized
+INFO - 2017-04-15 16:31:57 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:57 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:57 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:57 --> URI Class Initialized
+INFO - 2017-04-15 16:31:57 --> Router Class Initialized
+INFO - 2017-04-15 16:31:57 --> Output Class Initialized
+INFO - 2017-04-15 16:31:57 --> Security Class Initialized
+INFO - 2017-04-15 16:31:57 --> Input Class Initialized
+INFO - 2017-04-15 16:31:57 --> Language Class Initialized
+INFO - 2017-04-15 16:31:57 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:57 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:57 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:57 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:57 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:57 --> Model Class Initialized
+INFO - 2017-04-15 16:31:57 --> Model Class Initialized
+INFO - 2017-04-15 16:31:57 --> Model Class Initialized
+INFO - 2017-04-15 16:31:58 --> Config Class Initialized
+INFO - 2017-04-15 16:31:58 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:58 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:58 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:58 --> URI Class Initialized
+INFO - 2017-04-15 16:31:58 --> Router Class Initialized
+INFO - 2017-04-15 16:31:58 --> Output Class Initialized
+INFO - 2017-04-15 16:31:58 --> Security Class Initialized
+INFO - 2017-04-15 16:31:58 --> Input Class Initialized
+INFO - 2017-04-15 16:31:58 --> Language Class Initialized
+INFO - 2017-04-15 16:31:58 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:58 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:58 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:58 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:58 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:58 --> Model Class Initialized
+INFO - 2017-04-15 16:31:58 --> Model Class Initialized
+INFO - 2017-04-15 16:31:58 --> Model Class Initialized
+INFO - 2017-04-15 16:31:59 --> Config Class Initialized
+INFO - 2017-04-15 16:31:59 --> Hooks Class Initialized
+INFO - 2017-04-15 16:31:59 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:31:59 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:31:59 --> URI Class Initialized
+INFO - 2017-04-15 16:31:59 --> Router Class Initialized
+INFO - 2017-04-15 16:31:59 --> Output Class Initialized
+INFO - 2017-04-15 16:31:59 --> Security Class Initialized
+INFO - 2017-04-15 16:31:59 --> Input Class Initialized
+INFO - 2017-04-15 16:31:59 --> Language Class Initialized
+INFO - 2017-04-15 16:31:59 --> Loader Class Initialized
+INFO - 2017-04-15 16:31:59 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:31:59 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:31:59 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:31:59 --> Controller Class Initialized
+INFO - 2017-04-15 16:31:59 --> Model Class Initialized
+INFO - 2017-04-15 16:31:59 --> Model Class Initialized
+INFO - 2017-04-15 16:31:59 --> Model Class Initialized
+INFO - 2017-04-15 16:32:00 --> Config Class Initialized
+INFO - 2017-04-15 16:32:00 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:00 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:00 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:00 --> URI Class Initialized
+INFO - 2017-04-15 16:32:00 --> Router Class Initialized
+INFO - 2017-04-15 16:32:00 --> Output Class Initialized
+INFO - 2017-04-15 16:32:00 --> Security Class Initialized
+INFO - 2017-04-15 16:32:00 --> Input Class Initialized
+INFO - 2017-04-15 16:32:00 --> Language Class Initialized
+INFO - 2017-04-15 16:32:00 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:00 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:00 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:00 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:00 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:00 --> Model Class Initialized
+INFO - 2017-04-15 16:32:00 --> Model Class Initialized
+INFO - 2017-04-15 16:32:00 --> Model Class Initialized
+INFO - 2017-04-15 16:32:01 --> Config Class Initialized
+INFO - 2017-04-15 16:32:01 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:01 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:01 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:01 --> URI Class Initialized
+INFO - 2017-04-15 16:32:01 --> Router Class Initialized
+INFO - 2017-04-15 16:32:01 --> Output Class Initialized
+INFO - 2017-04-15 16:32:01 --> Security Class Initialized
+INFO - 2017-04-15 16:32:01 --> Input Class Initialized
+INFO - 2017-04-15 16:32:01 --> Language Class Initialized
+INFO - 2017-04-15 16:32:01 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:01 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:01 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:01 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:01 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:01 --> Model Class Initialized
+INFO - 2017-04-15 16:32:01 --> Model Class Initialized
+INFO - 2017-04-15 16:32:01 --> Model Class Initialized
+INFO - 2017-04-15 16:32:02 --> Config Class Initialized
+INFO - 2017-04-15 16:32:02 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:02 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:02 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:02 --> URI Class Initialized
+INFO - 2017-04-15 16:32:02 --> Router Class Initialized
+INFO - 2017-04-15 16:32:02 --> Output Class Initialized
+INFO - 2017-04-15 16:32:02 --> Security Class Initialized
+INFO - 2017-04-15 16:32:02 --> Input Class Initialized
+INFO - 2017-04-15 16:32:02 --> Language Class Initialized
+INFO - 2017-04-15 16:32:02 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:02 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:02 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:02 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:02 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:02 --> Model Class Initialized
+INFO - 2017-04-15 16:32:02 --> Model Class Initialized
+INFO - 2017-04-15 16:32:02 --> Model Class Initialized
+INFO - 2017-04-15 16:32:03 --> Config Class Initialized
+INFO - 2017-04-15 16:32:03 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:03 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:03 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:03 --> URI Class Initialized
+INFO - 2017-04-15 16:32:03 --> Router Class Initialized
+INFO - 2017-04-15 16:32:03 --> Output Class Initialized
+INFO - 2017-04-15 16:32:03 --> Security Class Initialized
+INFO - 2017-04-15 16:32:03 --> Input Class Initialized
+INFO - 2017-04-15 16:32:03 --> Language Class Initialized
+INFO - 2017-04-15 16:32:03 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:03 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:03 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:03 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:03 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:03 --> Model Class Initialized
+INFO - 2017-04-15 16:32:03 --> Model Class Initialized
+INFO - 2017-04-15 16:32:03 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Config Class Initialized
+INFO - 2017-04-15 16:32:17 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:17 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:17 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:17 --> URI Class Initialized
+INFO - 2017-04-15 16:32:17 --> Router Class Initialized
+INFO - 2017-04-15 16:32:17 --> Output Class Initialized
+INFO - 2017-04-15 16:32:17 --> Security Class Initialized
+INFO - 2017-04-15 16:32:17 --> Input Class Initialized
+INFO - 2017-04-15 16:32:17 --> Language Class Initialized
+INFO - 2017-04-15 16:32:17 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:17 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:17 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:17 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:17 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:17 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Config Class Initialized
+INFO - 2017-04-15 16:32:18 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:18 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:18 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:18 --> URI Class Initialized
+INFO - 2017-04-15 16:32:18 --> Router Class Initialized
+INFO - 2017-04-15 16:32:18 --> Output Class Initialized
+INFO - 2017-04-15 16:32:18 --> Security Class Initialized
+INFO - 2017-04-15 16:32:18 --> Input Class Initialized
+INFO - 2017-04-15 16:32:18 --> Language Class Initialized
+INFO - 2017-04-15 16:32:18 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:18 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:18 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:18 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Config Class Initialized
+INFO - 2017-04-15 16:32:18 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:18 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:18 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:18 --> URI Class Initialized
+INFO - 2017-04-15 16:32:18 --> Router Class Initialized
+INFO - 2017-04-15 16:32:18 --> Output Class Initialized
+INFO - 2017-04-15 16:32:18 --> Security Class Initialized
+INFO - 2017-04-15 16:32:18 --> Input Class Initialized
+INFO - 2017-04-15 16:32:18 --> Language Class Initialized
+INFO - 2017-04-15 16:32:18 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:18 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:18 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:18 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Config Class Initialized
+INFO - 2017-04-15 16:32:18 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:18 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:18 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:18 --> URI Class Initialized
+INFO - 2017-04-15 16:32:18 --> Router Class Initialized
+INFO - 2017-04-15 16:32:18 --> Output Class Initialized
+INFO - 2017-04-15 16:32:18 --> Security Class Initialized
+INFO - 2017-04-15 16:32:18 --> Input Class Initialized
+INFO - 2017-04-15 16:32:18 --> Language Class Initialized
+INFO - 2017-04-15 16:32:18 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:18 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:18 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:18 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:18 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:18 --> Model Class Initialized
+INFO - 2017-04-15 16:32:34 --> Config Class Initialized
+INFO - 2017-04-15 16:32:34 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:34 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:34 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:34 --> URI Class Initialized
+INFO - 2017-04-15 16:32:34 --> Router Class Initialized
+INFO - 2017-04-15 16:32:34 --> Output Class Initialized
+INFO - 2017-04-15 16:32:34 --> Security Class Initialized
+INFO - 2017-04-15 16:32:34 --> Input Class Initialized
+INFO - 2017-04-15 16:32:34 --> Language Class Initialized
+INFO - 2017-04-15 16:32:34 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:34 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:34 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:34 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:34 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:34 --> Model Class Initialized
+INFO - 2017-04-15 16:32:34 --> Model Class Initialized
+INFO - 2017-04-15 16:32:34 --> Model Class Initialized
+INFO - 2017-04-15 16:32:35 --> Config Class Initialized
+INFO - 2017-04-15 16:32:35 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:35 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:35 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:35 --> URI Class Initialized
+INFO - 2017-04-15 16:32:35 --> Router Class Initialized
+INFO - 2017-04-15 16:32:35 --> Output Class Initialized
+INFO - 2017-04-15 16:32:35 --> Security Class Initialized
+INFO - 2017-04-15 16:32:35 --> Input Class Initialized
+INFO - 2017-04-15 16:32:35 --> Language Class Initialized
+INFO - 2017-04-15 16:32:35 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:35 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:35 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:35 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:35 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:35 --> Model Class Initialized
+INFO - 2017-04-15 16:32:35 --> Model Class Initialized
+INFO - 2017-04-15 16:32:35 --> Model Class Initialized
+INFO - 2017-04-15 16:32:36 --> Config Class Initialized
+INFO - 2017-04-15 16:32:36 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:36 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:36 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:36 --> URI Class Initialized
+INFO - 2017-04-15 16:32:36 --> Router Class Initialized
+INFO - 2017-04-15 16:32:36 --> Output Class Initialized
+INFO - 2017-04-15 16:32:36 --> Security Class Initialized
+INFO - 2017-04-15 16:32:36 --> Input Class Initialized
+INFO - 2017-04-15 16:32:36 --> Language Class Initialized
+INFO - 2017-04-15 16:32:36 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:36 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:36 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:36 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:36 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:36 --> Model Class Initialized
+INFO - 2017-04-15 16:32:36 --> Model Class Initialized
+INFO - 2017-04-15 16:32:36 --> Model Class Initialized
+INFO - 2017-04-15 16:32:36 --> Config Class Initialized
+INFO - 2017-04-15 16:32:36 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:36 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:36 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:36 --> URI Class Initialized
+INFO - 2017-04-15 16:32:36 --> Router Class Initialized
+INFO - 2017-04-15 16:32:36 --> Output Class Initialized
+INFO - 2017-04-15 16:32:36 --> Security Class Initialized
+INFO - 2017-04-15 16:32:36 --> Input Class Initialized
+INFO - 2017-04-15 16:32:36 --> Language Class Initialized
+INFO - 2017-04-15 16:32:36 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:36 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:36 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:36 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:36 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:36 --> Model Class Initialized
+INFO - 2017-04-15 16:32:36 --> Model Class Initialized
+INFO - 2017-04-15 16:32:36 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Config Class Initialized
+INFO - 2017-04-15 16:32:37 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:37 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:37 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:37 --> URI Class Initialized
+INFO - 2017-04-15 16:32:37 --> Router Class Initialized
+INFO - 2017-04-15 16:32:37 --> Output Class Initialized
+INFO - 2017-04-15 16:32:37 --> Security Class Initialized
+INFO - 2017-04-15 16:32:37 --> Input Class Initialized
+INFO - 2017-04-15 16:32:37 --> Language Class Initialized
+INFO - 2017-04-15 16:32:37 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:37 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:37 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:37 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:37 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Config Class Initialized
+INFO - 2017-04-15 16:32:37 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:37 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:37 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:37 --> URI Class Initialized
+INFO - 2017-04-15 16:32:37 --> Router Class Initialized
+INFO - 2017-04-15 16:32:37 --> Output Class Initialized
+INFO - 2017-04-15 16:32:37 --> Security Class Initialized
+INFO - 2017-04-15 16:32:37 --> Input Class Initialized
+INFO - 2017-04-15 16:32:37 --> Language Class Initialized
+INFO - 2017-04-15 16:32:37 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:37 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:37 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:37 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:37 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Config Class Initialized
+INFO - 2017-04-15 16:32:37 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:37 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:37 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:37 --> URI Class Initialized
+INFO - 2017-04-15 16:32:37 --> Router Class Initialized
+INFO - 2017-04-15 16:32:37 --> Output Class Initialized
+INFO - 2017-04-15 16:32:37 --> Security Class Initialized
+INFO - 2017-04-15 16:32:37 --> Input Class Initialized
+INFO - 2017-04-15 16:32:37 --> Language Class Initialized
+INFO - 2017-04-15 16:32:37 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:37 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:37 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:37 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:37 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:37 --> Model Class Initialized
+INFO - 2017-04-15 16:32:38 --> Config Class Initialized
+INFO - 2017-04-15 16:32:38 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:38 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:38 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:38 --> URI Class Initialized
+INFO - 2017-04-15 16:32:38 --> Router Class Initialized
+INFO - 2017-04-15 16:32:38 --> Output Class Initialized
+INFO - 2017-04-15 16:32:38 --> Security Class Initialized
+INFO - 2017-04-15 16:32:38 --> Input Class Initialized
+INFO - 2017-04-15 16:32:38 --> Language Class Initialized
+INFO - 2017-04-15 16:32:38 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:38 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:38 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:38 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:38 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:38 --> Model Class Initialized
+INFO - 2017-04-15 16:32:38 --> Model Class Initialized
+INFO - 2017-04-15 16:32:38 --> Model Class Initialized
+INFO - 2017-04-15 16:32:40 --> Config Class Initialized
+INFO - 2017-04-15 16:32:40 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:40 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:40 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:40 --> URI Class Initialized
+INFO - 2017-04-15 16:32:40 --> Router Class Initialized
+INFO - 2017-04-15 16:32:40 --> Output Class Initialized
+INFO - 2017-04-15 16:32:40 --> Security Class Initialized
+INFO - 2017-04-15 16:32:40 --> Input Class Initialized
+INFO - 2017-04-15 16:32:40 --> Language Class Initialized
+INFO - 2017-04-15 16:32:40 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:40 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:40 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:40 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:40 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:40 --> Model Class Initialized
+INFO - 2017-04-15 16:32:40 --> Model Class Initialized
+INFO - 2017-04-15 16:32:40 --> Model Class Initialized
+INFO - 2017-04-15 16:32:43 --> Config Class Initialized
+INFO - 2017-04-15 16:32:43 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:43 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:43 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:43 --> URI Class Initialized
+INFO - 2017-04-15 16:32:43 --> Router Class Initialized
+INFO - 2017-04-15 16:32:43 --> Output Class Initialized
+INFO - 2017-04-15 16:32:43 --> Security Class Initialized
+INFO - 2017-04-15 16:32:43 --> Input Class Initialized
+INFO - 2017-04-15 16:32:43 --> Language Class Initialized
+INFO - 2017-04-15 16:32:43 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:43 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:43 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:43 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:43 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:43 --> Model Class Initialized
+INFO - 2017-04-15 16:32:43 --> Model Class Initialized
+INFO - 2017-04-15 16:32:43 --> Model Class Initialized
+INFO - 2017-04-15 16:32:44 --> Config Class Initialized
+INFO - 2017-04-15 16:32:44 --> Hooks Class Initialized
+INFO - 2017-04-15 16:32:44 --> UTF-8 Support Enabled
+INFO - 2017-04-15 16:32:44 --> Utf8 Class Initialized
+INFO - 2017-04-15 16:32:44 --> URI Class Initialized
+INFO - 2017-04-15 16:32:44 --> Router Class Initialized
+INFO - 2017-04-15 16:32:44 --> Output Class Initialized
+INFO - 2017-04-15 16:32:44 --> Security Class Initialized
+INFO - 2017-04-15 16:32:44 --> Input Class Initialized
+INFO - 2017-04-15 16:32:44 --> Language Class Initialized
+INFO - 2017-04-15 16:32:44 --> Loader Class Initialized
+INFO - 2017-04-15 16:32:44 --> Helper loaded: url_helper
+INFO - 2017-04-15 16:32:44 --> Database Driver Class Initialized
+INFO - 2017-04-15 16:32:44 --> Session: Class initialized using 'files' driver.
+INFO - 2017-04-15 16:32:44 --> Controller Class Initialized
+INFO - 2017-04-15 16:32:44 --> Model Class Initialized
+INFO - 2017-04-15 16:32:44 --> Model Class Initialized
+INFO - 2017-04-15 16:32:44 --> Model Class Initialized

@@ -12,6 +12,18 @@ class Login extends CI_Controller
 {
     public function index()
     {
+        // 写入1
+        $this->session->set_userdata([
+            'login_user' => 'huangxiaolu',
+        ]);
+        // 写入2
+        $this->session->set_userdata('login_user', 'huangxiaolu');
+
+        // 获取
+        $this->session->userdata('login_user');
+
+
+
         $this->load->helper('captcha');
         $speed = 'ahwrmlp798262biueyebmzksx';
         $word = '';
@@ -64,6 +76,12 @@ class Login extends CI_Controller
 
         $this->session->set_userdata($sessionData);
 //        $data = $this->session->userdata('username');
+        // 写入
+        $this->session->set_userdata([
+            'login_user' => 'huangxiaolu',
+        ]);
+        // 获取
+        $this->session->userdata('login_user');
 
 
         $this->session->userdata('username');

@@ -56,6 +56,7 @@ class Category_model extends CI_Model
         $this->db->delete('category', array('cid' => $cid));
 
     }
+
 }
 
 

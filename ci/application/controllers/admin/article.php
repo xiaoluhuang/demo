@@ -37,12 +37,10 @@ class Article extends MY_Controller
         //创建a连接
         $links = $this->pagination->create_links();
 //        p($data);die;
-        $offset = $this->uri->segment(4);
-        $this->db->limit($perPage, $offset);
 
 
         $article = $this->art->article_category();
-//        p($data);die;
+//        p($article);die;
         $this->load->view('admin/check_article.html', [
             'links' => $links,
             'article' => $article,
@@ -143,7 +141,8 @@ class Article extends MY_Controller
         $aid = $this->uri->segment(4);
         $article = $this->art->check_article($aid);
         $cname = $this->art->get_category($article['cid']);
-//p($cname);die;
+
+//        p($cname);die;
         $this->load->helper('form');
         $this->load->view('admin/edit_article.html', [
             'article' => $article,

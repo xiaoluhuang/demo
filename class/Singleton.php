@@ -59,9 +59,9 @@ $singleton = Singleton::getInstance();
 $q = Singleton::getInstance();
 // 用该对象来调用方法
 $singleton->setName('huangxiaolu');
-$singleton->getName();
-$q->getName();
+$singleton->getName(); // huangxiaolu
+$q->getName();//huangxiaolu
 $q->setName('wushuiyong');
-$q->getName();
-$singleton->getName();
+$q->getName();//wushuiyong
+$singleton->getName();//wushuiyong
 

@@ -17,6 +17,8 @@ class Article_model extends CI_Model
      */
     public function add($data)
     {
+        // data = ['title' => 'a title', 'content' => 'this is a content',]
+        // sql : insert into article (title, content) values('a title', 'this is a content');
         $this->db->insert('article', $data);
     }
 
@@ -68,4 +70,6 @@ class Article_model extends CI_Model
 //        var_dump('article', $data, array('aid' => $aid));
         return $this->db->update('article', $data, array('aid' => $aid));
     }
+
+
 }
