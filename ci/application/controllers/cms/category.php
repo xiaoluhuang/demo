@@ -6,14 +6,12 @@
  * Date: 2017/4/19
  * Time: 下午12:46
  */
-class  Category extends CI_Controller
+class  Category extends MY_controller
 {
 
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('cms_category_model', 'cms');
-        $this->load->helper('form');
 
     }
 
@@ -22,14 +20,14 @@ class  Category extends CI_Controller
     */
     public function index()
     {
-        $category = $this->cms->get_category();
-        $count = $this->cms->count_category();
+        $category = $this->cate->get_category();
+        $count = $this->cate->count_category();
         $data = [
             'count' => $count,
             'category' => $category,
         ];
 //        var_dump($data);die;
-        $this->load->view('cms/admin-support-cat.html', $data);
+        $this->load->view('cms/admin-category.html', $data);
     }
     /*
      * 新增专栏
@@ -37,7 +35,7 @@ class  Category extends CI_Controller
     public function add_category()
     {
 
-        $this->load->view('cms/admin-support-cat.html');
+        $this->load->view('cms/admin-category.html');
     }
 
     public function add()
@@ -45,7 +43,7 @@ class  Category extends CI_Controller
         $category = [
             'category' => $this->input->post('category'),
         ];
-        $this->cms->add_category($category);
+        $this->cate->add_category($category);
         success('cms/category/index', '栏目增加成功');
     }
 
@@ -56,7 +54,7 @@ class  Category extends CI_Controller
     {
         $category_id = $this->uri->segment(4);
 //        var_dump($category_id);die;
-        $this->cms->delete_category($category_id);
+        $this->cate->delete_category($category_id);
         success('cms/category/index', '专栏删除成功');
     }
 
@@ -66,13 +64,13 @@ class  Category extends CI_Controller
     public function edit_category()
     {
         $category_id = $this->uri->segment(4);
-        $category['category'] = $this->cms->get($category_id);
+        $category['category'] = $this->cate->get($category_id);
 //        var_dump( $category_id,$category);die;
 //        $data= ['category'=> $category];
 //        var_dump($data);die;
 
-        $this->load->view('cms/admin-support-edit-cat.html',$category);
-//        $this->cms->edit_category($category_id,$category);
+        $this->load->view('cms/admin-edit-category.html',$category);
+//        $this->cate->edit_category($category_id,$category);
     }
 
     public function edit()
@@ -82,7 +80,7 @@ class  Category extends CI_Controller
         $category =[
             'category' => $name,
         ];
-        $this->cms->edit_category($category_id,$category);
+        $this->cate->edit_category($category_id,$category);
         success('cms/category/index','修改成功');
     }
 }

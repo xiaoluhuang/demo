@@ -16,9 +16,9 @@ class  CMS_Article_model extends CI_Model
     /**
      * 添加文章,增
      */
-    public function add_article($article)
+    public function publish_article($user_id, $article)
     {
-        $this->db->insert('article', $article);
+        $this->db->insert('article',$article);
     }
 
     /**
@@ -27,6 +27,8 @@ class  CMS_Article_model extends CI_Model
     public function get_article()
     {
         $article = $this->db->get('article')->result_array();
+//        var_dump($article);
+
         return $article;
     }
 

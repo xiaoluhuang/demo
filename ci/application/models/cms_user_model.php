@@ -40,6 +40,14 @@ class  CMS_User_model extends CI_Model
         return $user;
     }
 
+    public function get_name($user_name)
+    {
+        $user = $this->db->where(['name' => $user_name])->get('user')->row_array();
+//        p($data);
+        return $user;
+    }
+
+
     /*
      * 计算专栏总数
      */

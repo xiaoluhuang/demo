@@ -43,8 +43,7 @@
                      <img src="<?= base_url()?>assets/img/top-mouse.png "  class="header-mid" />
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h4><span>Call:</span> +01-4589-987-567</h4>
-                    <h4><span>E-mail:</span> info@domain.com</h4>
+                    <h4><span>用户:</span><?= $user_name?></h4>
                 </div>
                 
             </div>
@@ -120,10 +119,18 @@
 
                     <h3 class=" text-center">发表文章</h3>
                    <div class="hr-div"> <hr /></div>
-                    <form>
+                    <form action="<?= site_url('cms/article/publish_article/'.$user_id)?>" method="post">
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <label>标题</label>
                             <input type="text" class="form-control" required="required" placeholder="输入标题 " name="title" />
+                        </div>
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>选择专栏</p>
+                            <select name="category[]">
+                                <?php foreach($category as $v):?>
+                                <option value ="<?= $v['category']?>"><?= $v['category']?></option>
+                                <? endforeach?>
+                            </select>
                         </div>
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <label>文章内容</label>
@@ -140,11 +147,11 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item active">导航栏</a>
 
-                        <a href="<?= site_url('cms/article/publish_article')?>" class="list-group-item">发表文章</a>
+                        <a href="<?= site_url('cms/login/index_user/'.$user_id)?>" class="list-group-item">发表文章</a>
                         <a href="admin-user-list.html" class="list-group-item">New Users</a>
-                        <a href="admin-open-tickets.html" class="list-group-item">Open Tickets</a>
-                        <a href="<?= site_url('cms/category/index')?>" class="list-group-item">专栏管理</a>
-                         <a href="<?= site_url('cms/user/index')?>" class="list-group-item">用户管理</a>
+                        <a href="<?= site_url('cms/article/index/'.$user_id)?>" class="list-group-item">文章管理</a>
+                        <a href="<?= site_url('cms/category/index/'.$user_id)?>" class="list-group-item">专栏管理</a>
+                         <a href="<?= site_url('cms/user/index'.$user_id)?>" class="list-group-item">用户管理</a>
                         <a href="admin-change-password.html" class="list-group-item">Change Password</a>
 
 

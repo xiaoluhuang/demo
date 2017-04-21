@@ -15,11 +15,11 @@
         <![endif]-->
     <title>Support Admin</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="<?= base_url()?>assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="<?= base_url()?>assets/css/font-awesome.min.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="<?= base_url()?>assets/css/style.css" rel="stylesheet" />
     <!-- Google	Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
@@ -36,11 +36,11 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <a href="index.html">
-                    <img src="assets/img/logo.png"  />
+                    <img src="<?= base_url()?>assets/img/logo.png"  />
                         </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 text-center" >
-                     <img src="assets/img/top-mouse.png "  class="header-mid" />
+                     <img src="<?= base_url()?>assets/img/top-mouse.png "  class="header-mid" />
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <h4><span>Call:</span> +01-4589-987-567</h4>
@@ -55,102 +55,24 @@
         <div class="container" >
             <div class="row">
                 <div class="col-lg-9 col-md-9 col-sm-9">
-                 
-                       <h3>Ticket ID  <span class="label label-danger">#109</span> 
-                        Status <span class="label label-info">Closed</span> 
-                       Priority <span class="label label-warning">High</span>
-                        Category <span class="label label-success">Template Support</span>
-                            Username <span class="label label-info">Dummy Username</span>
-                   </h3>
-                                          
-                      <h3>Subject <span class="label label-default">Template Dummy Subject Line</span></h3> 
+                    <h3></h3>
+                    <h3>专栏 <span class="label label-success"><?= $article['category']?></span></h3>
                      <div class="hr-div"> <hr /></div>
-                    
-                        <div class="panel panel-default">
-  <div class="panel-heading"><strong class="label label-warning">By Admin</strong><span class="label label-danger pull-right">Dated: 10/07/2014</span> </div>
-  <div class="panel-body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      <strong>
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </strong>
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-  </div>
-</div>  
-                       <div class="panel panel-default">
-  <div class="panel-heading"><strong class="label label-info">By User</strong><span class="label label-success pull-right">Dated: 9/07/2014</span> </div>
-  <div class="panel-body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      <strong>
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </strong>
-      <ul>
-          <li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </li>
-            <li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </li>
-            <li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </li>
-      </ul>
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-  </div>
-</div>
-                      <div class="panel panel-default">
-  <div class="panel-heading"><strong class="label label-success">By Admin</strong><span class="label label-danger pull-right">Dated: 8/07/2014</span> </div>
-  <div class="panel-body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    
-  </div>
-</div>  
-                       <div class="panel panel-default">
-  <div class="panel-heading"><strong class="label label-danger">By User</strong><span class="label label-warning pull-right">Dated: 7/07/2014</span> </div>
-  <div class="panel-body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-      <hr  />
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      <strong>
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </strong>
-      <ul>
-        
-            <li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </li>
-            <li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </li>
-      </ul>
-  </div>
-</div>  
-                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                            <label>Make New Reply</label>
-                            <textarea class="form-control" rows="8"></textarea>
-                        </div>
 
-                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                            <button type="submit" class="btn btn-primary">Reply Ticket</button>
-                        </div>
+                    <div class="panel panel-default">
+                        <h3 class="panel-heading"><strong  class="label label-warning"><?= $article['title']?></strong></h3>
+                        <div class="panel-heading"><strong >作者<?= $article['user']?> </strong>
+                            <span> <strong >  Dated:<?= $article['created_at']?></strong></span></div>
+
+                        <div class="panel-body"><?= $article['content']?></div>
+                    </div>
+  <div class="form-group col-lg-12 col-md-12 col-sm-12">
+  <label>Make New Reply</label>
+ <textarea class="form-control" rows="8"></textarea>
+  </div>
+     <div class="form-group col-lg-12 col-md-12 col-sm-12">
+  <button type="submit" class="btn btn-primary">Reply Ticket</button>
+ </div>
                      
 
                 </div>
@@ -226,9 +148,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
     </div>
     <!--  Jquery Core Script -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="<?= base_url()?>assets/js/jquery-1.10.2.js"></script>
     <!--  Core Bootstrap Script -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="<?= base_url()?>assets/js/bootstrap.js"></script>
 
 </body>
 </html>

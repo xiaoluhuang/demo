@@ -28,10 +28,10 @@ class Article extends MY_Controller
         $config['total_rows'] = $this->db->count_all_results('article');
         $config['per_page'] = $perPage;
         $config['uri_segment'] = 4;
-        $config['first_link'] = '第一页';
+//        $config['first_link'] = '第一页';
         $config['prev_link'] = '上一页';
         $config['next_link'] = '下一页';
-        $config['last_link'] = '最后一页';
+//        $config['last_link'] = '最后一页';
 
         $this->pagination->initialize($config);
         //创建a连接

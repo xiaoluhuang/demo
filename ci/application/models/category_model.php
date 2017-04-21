@@ -13,6 +13,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Category_model extends CI_Model
 {
+    public function lists($pos, $size) {
+        $sql = sprintf('select * from category limit %d, %d',
+            $pos, $size);
+
+        return $this->db->query($sql)->result_array();
+    }
+
+    public function count_category()
+    {
+        return $this->db->count_all_results('category');
+    }
+
+
     /**
      * 添加栏目,增
      */

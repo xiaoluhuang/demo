@@ -50,93 +50,76 @@
             </div>
         </div>
     </div>
-    <section >
-        <div class="container">
+    
+    <section id="main" >
+        <div class="container" >
             <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                 
+                     <h3>所有文章   <span class="label label-success"><?= $count?></span></h3>
+                      
+                   <div class="hr-div"> <hr /></div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>文章ID</th>
+                                            <th>作者</th>
+                                            <th>专栏</th>
+                                            <th>标题</th>
+                                            <th>发布时间</th>
+                                             <th>编辑文章</th>
+                                            <th>删除文章</th>
+                                             <th>查看文章</th>
+                                        </tr>
+                                    </thead>
+                                    <?php foreach($article as $v):?>
+                                    <tbody>
+                                        <tr>
+                                            <td><?= $v['article_id']?></td>
+                                            <td><?= $v['article_id']?></td>
+                                            <td><span class="label label-warning">专栏</span></td>
+                                             <td><?= $v['title']?></td>
+                                            <td><?= $v['created_at']?></td>
+                                            <td><a href="<?= site_url('cms/article/edit_article/'.$v['article_id'])?>" class="label label-danger">编辑</a></td>
+                                            <td><a href="<?= site_url('cms/article/delete_article/'.$v['article_id'])?>" class="label label-danger">删除</a></td>
+                                            <td><a href="<?= site_url('cms/article/detail/'.$v['article_id'])?>" class="label label-success">详情 <i class="fa fa-forward"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                    <?php endforeach?>
+                                </table>
+                            </div>
+                        <ul class="pagination"><?= $links?>
+</ul>
 
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <img src="<?= base_url()?>assets/img/premium.png" class="img-responsive" />
-                    <h3>Our Premium Support</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <img src="<?= base_url()?>assets/img/moniter.png" class="img-responsive img-max-width" />
+                    </div>
+               <div class="col-lg-3 col-md-3 col-sm-3">
+                    <a href="index.html" class=" label label-danger"><strong>LOGOUT / SINGOUT</strong> </a>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Quick Links
+                        </a>
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h3>用户登录 </h3>
-                    <form action="<?= site_url('cms/login/user_login')?>" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" required="required" placeholder="Username / Email" name="username"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" required="required" placeholder="Your Password" name="passwd" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit"  value="点击登录">
-                        </div>
-                        <a href="#">Forgot Password ?</a>
+                      
+                        <a href="admin-dashboard.html" class="list-group-item">My Dashboard</a>
+                        <a href="admin-user-list.html" class="list-group-item">New Users</a>
+                        <a href="admin-open-tickets.html" class="list-group-item">Open Tickets</a>
+                        <a href="admin-support-cat.html" class="list-group-item">Support Categories</a>
+                         <a href="admin-user-list.html" class="list-group-item">All Users</a>
+                        <a href="admin-change-password.html" class="list-group-item">Change Password</a>
 
-                    </form>
+
+                    </div>
+                    <div class="alert alert-danger text-center">
+                        <h3>Import Information</h3>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Nulla pretium lectus vel justo iaculis blandit.  
+                    </div>
+                    
                 </div>
             </div>
-
         </div>
-
     </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <img src="<?= base_url()?>assets/img/award.png" class="img-responsive" />
-                    <h3>Award Winning Company</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-
-                    <h3>Sing Up Here</h3>
-                    <form action="<?= site_url('cms/login/register')?>" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" required="required" placeholder="Desired Username" name="username" />
-                        </div>
-                        <!--<div class="form-group">-->
-                            <!--<input type="text" class="form-control" required="required" placeholder="Your Email" />-->
-                        <!--</div>-->
-                        <div class="form-group">
-                            <input type="password" class="form-control" required="required" placeholder="Desired Password" name="passwd"/>
-                        </div>
-                        <input type="submit"  value="点击注册">
-                        <div class="form-group">
-
-                        </div>
-                        <strong>Note: </strong>By Singing you agree to our  <a href="#">terms & policies</a>
-                    </form>
-                </div>
-
-
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <img src="<?= base_url()?>assets/img/up.png" class="img-responsive" />
-                    <h3>We Are Up 24x7 For You</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Nulla pretium lectus vel justo iaculis blandit.
-                       Nulla facilisi. In hac habitasse platea dictumst.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <div id="footer">
+  <div id="footer">
         <div class="container">
 
             <div class="row">
