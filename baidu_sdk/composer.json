@@ -1,0 +1,13 @@
+{
+    "name": "composer/composer",
+
+    "require": {
+      // vendor 里面
+       "meolu/yii2-oss":"*"
+    },
+    "autoload": {
+        // vendor 外面
+        // namespace : directory
+        "Service\\":"Service/"
+    }
+}

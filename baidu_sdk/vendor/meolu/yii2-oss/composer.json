@@ -1,0 +1,20 @@
+{
+  "name": "meolu/yii2-oss",
+  "type": "library",
+  "description": "阿里云OSS官方SDK的Composer封装，支持Yii2。",
+  "keywords": ["AliyunOSS", "aliyun", "OSS"],
+  "homepage": "https://github.com/meolu/yii2-oss",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "authors": [
+      {
+          "name": "wushuiyong",
+          "email": "wushuiyong@huamanshu.com"
+      }
+  ],
+  "autoload": {
+    "psr-4": {"meolu\\AliyunOSS\\": ""}
+  }
+}
