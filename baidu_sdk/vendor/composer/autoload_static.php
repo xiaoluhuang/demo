@@ -11,12 +11,20 @@ class ComposerStaticInit3b7394c492c9f24c29220b554955f430
         array (
             'meolu\\AliyunOSS\\' => 16,
         ),
+        'S' => 
+        array (
+            'Service\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'meolu\\AliyunOSS\\' => 
         array (
             0 => __DIR__ . '/..' . '/meolu/yii2-oss',
+        ),
+        'Service\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Service',
         ),
     );
 

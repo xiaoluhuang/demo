@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'meolu\\AliyunOSS\\' => array($vendorDir . '/meolu/yii2-oss'),
+    'Service\\' => array($baseDir . '/Service'),
 );
