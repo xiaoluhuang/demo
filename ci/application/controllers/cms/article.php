@@ -18,13 +18,10 @@ class Article extends MY_controller
      */
     public function index()
     {
-
-        $article = $this->art->get_article();
-        $count = $this->art->count_article('art');
         $this->load->library('pagination');
         $config['base_url'] = site_url('cms/article/index');
-        $config['total_rows'] = $count;
-        $config['per_page'] = 4;
+        $config['total_rows'] = $this->db->count_all_results('article');
+        $config['per_page'] = 5;
         $config['uri_segment'] = 4;
         $config['first_link'] = '第一页';
         $config['prev_link'] = '上一页';
@@ -37,16 +34,17 @@ class Article extends MY_controller
 //        p($data);die;
         $offset = $this->uri->segment(4);
         $this->db->limit(4, $offset);
+        $article = $this->art->get_articles();
+        $count = $this->art->count_article();
         $data = [
             'count' => $count,
             'article' => $article,
             'links' => $links,
         ];
-
-//        var_dump($data,$count);die;
+//        var_dump($data);die;
         $this->load->view('cms/admin-article.html', $data);
-
     }
+
 
     /*
      * 发表文章

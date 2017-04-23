@@ -11,14 +11,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 用户管理模型
  */
 
-class  CMS_User_model extends CI_Model
+class  CMS_Comment_model extends CI_Model
 {
     /**
      * 添加用户,增
      */
-    public function add_user($user)
+    public function write_reply($message)
     {
-        $this->db->insert('user', $user);
+        $this->db->insert('comment', $message);
     }
 
     /**
@@ -33,11 +33,19 @@ class  CMS_User_model extends CI_Model
     /**
      * 查询对应的用户
      */
-    public function get($user_id)
+    public function get($article_id)
     {
-        $user = $this->db->where(['user_id' => $user_id])->get('user')->row_array();
+        $comment = $this->db->where(['article_id' => $article_id])->get('comment')->result_array();
 //        p($data);
-        return $user;
+        return $comment;
+
+
+    }
+    public function get_rows($article_id)
+    {
+        $comment = $this->db->where(['article_id' => $article_id])->get('comment');
+//        p($data);
+        return $comment;
     }
 
     public function get_name($user_name)
@@ -53,7 +61,7 @@ class  CMS_User_model extends CI_Model
      */
     public function count_user()
     {
-        return $this->db->count_all_results('user');
+        return $this->db->count_results('user');
     }
 
     /**

@@ -60,26 +60,17 @@
             <div class="col-lg-9 col-md-9 col-sm-9">
                 <h3></h3>
                 <h3>专栏 <span class="label label-success"><?= $category['category']?></span></h3>
-                <div class="hr-div">
-                    <hr/>
-                </div>
+                <!--<div class="hr-div">-->
+                <!--</div>-->
 
                 <div class="panel panel-default">
                     <h3 class="panel-heading"><strong  class="label label-warning"><?= $article['title']?></strong></h3>
                     <div class="panel-heading"><strong >作者<?= $user['name']?> </strong>
                         <span> <strong >  Dated:<?= $article['created_at']?></strong></span></div>
+                    <td><a href="<?= site_url('cms/article/edit_article/'.$article['article_id'])?>" class="label label-danger">修改文章 <i class="fa fa-forward"></i></a></td>
 
                     <div class="panel-body"><?= $article['content']?></div>
                 </div>
-                <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                    <label>Make New Reply</label>
-                    <textarea class="form-control" rows="8"></textarea>
-                </div>
-                <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                    <button type="submit" class="btn btn-primary">Reply Ticket</button>
-                </div>
-
-
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <a href="index.html" class=" label label-danger"><strong>LOGOUT / SINGOUT</strong> </a>

@@ -11,9 +11,10 @@ class Login extends CI_controller
     public function __construct()
     {
         parent::__construct();
-
-
-
+        $this->load->library('session');
+        $this->load->model('cms_user_model', 'user');
+        $this->load->model('cms_category_model', 'cate');
+        $this->load->helper('form');
     }
 
     /*
@@ -93,7 +94,8 @@ class Login extends CI_controller
         ];
 //        var_dump($session);die;
         $this->session->set_userdata($session);
-//        $session1 = $this->session->userdata();
+        $session1 = $this->session->userdata();
+//        $_SESSION['xxxxxxx'] = 'yyyyyyyyy';
 //        var_dump($session1, $_SESSION);die;
 //        $this->session->userdata('username');
 //        $this->session->userdata('uid');
