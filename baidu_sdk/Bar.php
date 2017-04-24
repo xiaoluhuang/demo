@@ -7,6 +7,6 @@
  */
 require_once __DIR__.'/vendor/autoload.php';
 
-use Service\Sdk;
-$sdk = new Sdk();
-$sdk->name();
+use Service\sdk\Badguy;
+$sdk = new Badguy();
+$sdk->husband();
