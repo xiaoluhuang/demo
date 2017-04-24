@@ -13,11 +13,14 @@ class MY_Controller extends CI_Controller
     {
         parent::__construct();
         $this->load->library('session');
+//        session_start();
+//        var_dump($_SESSION);
         $username = $this->session->userdata('user_name');
         $uid = $this->session->userdata('user_id');
-//        if (!$username || !$uid) {
-//            redirect('cms/login/user_login_index');
-//        }
+        var_dump($this->session->userdata());
+        if (!$username || !$uid) {
+            redirect('cms/login/user_login_index');
+        }
         $this->load->model('cms_user_model', 'user');
         $this->load->model('cms_category_model', 'cate');
         $this->load->model('cms_article_model', 'art');

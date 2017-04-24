@@ -34,6 +34,7 @@ class Article extends MY_controller
 //        p($data);die;
         $offset = $this->uri->segment(4);
         $this->db->limit(4, $offset);
+        unset($offset);
         $article = $this->art->get_articles();
         $count = $this->art->count_article();
         $data = [

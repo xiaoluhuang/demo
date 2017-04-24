@@ -22,6 +22,8 @@ class Home extends CI_Controller
 
     public function index()
     {
+        $_SESSION['name'] = 'wushuiyong';
+        var_dump($_SESSION);
         $this->load->library('pagination');
         $config['base_url'] = site_url('cms/home/index');
         $config['total_rows'] = $this->db->count_all_results('article');
@@ -51,6 +53,8 @@ class Home extends CI_Controller
 
     public function about()
     {
+        $_SESSION['category'] = 'user';
+        var_dump($_SESSION);
         $this->load->view('cms/about.html');
     }
 
