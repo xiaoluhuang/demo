@@ -26,44 +26,11 @@ class Login extends CI_controller
     }
 
     /*
-     * 加载用户首页
-     */
-
-
-    /*
      * 登出页面
      */
     public function logout()
     {
         $this->load->view('cms/index.html');
-
-    }
-
-    /*
-     * 管理者登录
-     */
-    public function admin_login_index()
-    {
-
-        $this->load->view('cms/index-admin.html');
-    }
-
-    public function admin_login()
-    {
-        //从表单获取用户名和密码
-        $username = $this->input->post('username');
-        $passwd = $this->input->post('passwd');
-
-        //从数据库获取用户名和密码
-
-        $admin = $this->user->get_admin($username);
-//        var_dump($admin,$username,$passwd);die;
-        //将两者数据进行比较
-        if (!$username || md5($passwd) != $admin['admin_passwd']) {
-            error('用户名不存在或密码错误');
-        }
-
-        success('cms/login/index_admin', '登录成功');
 
     }
 
@@ -99,7 +66,7 @@ class Login extends CI_controller
 //        var_dump($session1, $_SESSION);die;
 //        $this->session->userdata('username');
 //        $this->session->userdata('uid');
-        success('cms/user/index_user/', '登录成功');
+        success('cms/login/index_user/', '登录成功');
 
 
 
@@ -129,6 +96,25 @@ class Login extends CI_controller
         $this->user->add_user($registerdata);
         //跳转页面
         success('cms/user/index_user', '注册成功');
+    }
+
+
+
+    public function index_user()
+    {
+        $category = $this->cate->get_category();
+        $user_name = $this->session->userdata('user_name');
+        $user_id = $this->session->userdata('user_id');
+        $session = $this->session->userdata();
+//        var_dump($session, $_SESSION);die;
+        $data = [
+            'user_name' =>$user_name,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
+            'category' => $category
+        ];
+//        var_dump($data);die;
+        $this->load->view('cms/admin-index.html',$data);
     }
 
 

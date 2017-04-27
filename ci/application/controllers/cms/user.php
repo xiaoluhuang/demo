@@ -42,10 +42,15 @@ class User extends MY_Controller
 //        p($links);die;
         $user = $this->user->get_user();
         $count = $this->user->count_user();
+        $user_id = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+
         $data = [
             'count' => $count,
             'user' => $user,
             'links' => $links,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
         ];
 //        var_dump($data);die;
         $this->load->view('cms/admin-user.html', $data);
@@ -53,22 +58,6 @@ class User extends MY_Controller
     /*
         * 加载用户首页
         */
-
-    public function index_user()
-    {
-        $category = $this->cate->get_category();
-        $user_name = $this->session->userdata('user_name');
-        $user_id = $this->session->userdata('user_id');
-        $session = $this->session->userdata();
-//        var_dump($session, $_SESSION);die;
-        $data = [
-            'user_name' =>$user_name,
-            'user_id' => $user_id,
-            'category' => $category
-        ];
-//        var_dump($data);die;
-        $this->load->view('cms/admin-index.html',$data);
-    }
 
     /*
      * 添加新用户
@@ -112,8 +101,15 @@ class User extends MY_Controller
     {
 
         $user_id = $this->uri->segment(4);
-        $user['user'] = $this->user->get($user_id);
-        $this->load->view('cms/admin-change-password.html', $user);
+        $userId = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+        $user = $this->user->get($user_id);
+        $data = [
+            'user' => $user,
+            'user_id' => $userId,
+            'user_name' => $user_name,
+        ];
+        $this->load->view('cms/admin-change-password.html', $data);
     }
 
     public function change()
@@ -132,6 +128,7 @@ class User extends MY_Controller
         }
         $data = [
             'passwd' => md5($new_passwd2),
+            'user_id' => $user_id,
         ];
         $this->user->edit_user($user_id, $data);
         success('cms/user/index', '密码修改成功');
@@ -143,8 +140,15 @@ class User extends MY_Controller
     public function change_name()
     {
         $user_id = $this->uri->segment(4);
-        $user['user'] = $this->user->get($user_id);
-        $this->load->view('cms/admin-change-name.html', $user);
+        $userId = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+        $user = $this->user->get($user_id);
+        $data = [
+            'user' => $user,
+            'user_id' => $userId,
+            'user_name' => $user_name,
+        ];
+        $this->load->view('cms/admin-change-name.html', $data);
     }
 
     public function change_username()

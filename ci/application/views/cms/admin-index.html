@@ -119,7 +119,7 @@
 
                     <h3 class=" text-center">发表文章</h3>
                    <div class="hr-div"> <hr /></div>
-                    <form action="<?= site_url('cms/article/publish_article/'.$user_id)?>" method="post">
+                    <form action="<?= site_url('cms/article/publish_article/')?>" method="post">
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <label>标题</label>
                             <input type="text" class="form-control" required="required" placeholder="输入标题 " name="title" />
@@ -147,12 +147,12 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item active">导航栏</a>
 
-                        <a href="<?= site_url('cms/login/index_user/'.$user_id)?>" class="list-group-item">发表文章</a>
+                        <a href="<?= site_url('cms/login/index_user/')?>" class="list-group-item">发表文章</a>
                         <a href="admin-user-list.html" class="list-group-item">New Users</a>
                         <a href="<?= site_url('cms/article/index/')?>" class="list-group-item">文章管理</a>
-                        <a href="<?= site_url('cms/category/index/'.$user_id)?>" class="list-group-item">专栏管理</a>
-                         <a href="<?= site_url('cms/user/index'.$user_id)?>" class="list-group-item">用户管理</a>
-                        <a href="admin-change-password.html" class="list-group-item">Change Password</a>
+                        <a href="<?= site_url('cms/category/index/')?>" class="list-group-item">专栏管理</a>
+                         <a href="<?= site_url('cms/user/index/')?>" class="list-group-item">用户管理</a>
+                        <a href="<?= site_url('cms/user/change_passwd/'.$user_id)?>" class="list-group-item">修改密码</a>
 
 
                     </div>

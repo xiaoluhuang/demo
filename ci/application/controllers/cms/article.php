@@ -34,13 +34,18 @@ class Article extends MY_controller
 //        p($data);die;
         $offset = $this->uri->segment(4);
         $this->db->limit(4, $offset);
-        unset($offset);
+//        unset($offset);
         $article = $this->art->get_articles();
         $count = $this->art->count_article();
+        $user_id = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+
         $data = [
             'count' => $count,
             'article' => $article,
             'links' => $links,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
         ];
 //        var_dump($data);die;
         $this->load->view('cms/admin-article.html', $data);
@@ -59,6 +64,7 @@ class Article extends MY_controller
 
         $title = $this->input->post('title');
         $content = $this->input->post('content');
+        $user = $this->session->userdata('user_name');
 
         $category = $this->cate->get_id($category_name[0]);
 
@@ -67,7 +73,7 @@ class Article extends MY_controller
             'category_id' => $category['category_id'],
             'title' => $title,
             'content' => $content,
-            'user' => $user['name'],
+            'user' => $user,
             'category' => $category['category'],
         ];
 //        var_dump($article);die;
@@ -84,10 +90,14 @@ class Article extends MY_controller
         $article = $this->art->get($article_id);
         $category = $this->cate->get($article['category_id']);
         $user = $this->user->get($article['user_id']);
+        $user_id = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
         $data = [
             'article' => $article,
             'user' => $user,
             'category' => $category,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
         ];
 //        var_dump($article);die;
         $this->load->view('cms/admin-article-detail.html', $data);
@@ -101,6 +111,8 @@ class Article extends MY_controller
         $article_id = $this->uri->segment(4);
         $this->art->delete_article($article_id);
         success('cms/article/index/' . $article_id, '文章删除成功');
+
+
     }
 
     /*
@@ -109,13 +121,44 @@ class Article extends MY_controller
     public function edit_article()
     {
         $article_id = $this->uri->segment(4);
-        $article['article'] = $this->art->get($article_id);
-        $this->load->view('cms/admin-article-edit.html', $article);
+        $article = $this->art->get($article_id);
+        $user_name = $this->session->userdata('user_name');
+//        var_dump($user_name);die;
+        $category = $this->cate->get_category();
+        $cateChose = $this->cate->get($article['category_id']);
+        $user_id = $this->session->userdata('user_id');
+        $data = [
+            'user' => $user_name,
+            'article' => $article,
+            'category' => $category,
+            'cateChose' => $cateChose['category'],
+            'user_id' => $user_id,
+            'user_name' => $user_name,
+        ];
+        $this->load->view('cms/admin-article-edit.html', $data);
 
     }
 
     public function edit()
     {
+        $article_id = $this->uri->segment(4);
+        $category_name = $_POST['category'];
+//        var_dump($category_name);die;
+        $title = $this->input->post('title');
+        $content = $this->input->post('content');
+        $user = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_id');
+//        $category = $this->cate->get_id($category_name[0]);
+        $article = [
+            'article_id' => $article_id,
+            'content' => $content,
+            'title' => $title,
+            'user_id' => $user ,
+            'user_name' => $user_name ,
+            'category_id' => $category_name[0],
+        ];
+        $this->art->edit_article($article_id,$article);
+        success('cms/article/index','文章修改成功');
 
     }
 }

@@ -43,8 +43,7 @@
                      <img src="<?= base_url()?>assets/img/top-mouse.png "  class="header-mid" />
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h4><span>Call:</span> +01-4589-987-567</h4>
-                    <h4><span>E-mail:</span> info@domain.com</h4>
+                    <h4><span>用户:</span><?= $user_name?></h4>
                 </div>
                 
             </div>
@@ -58,14 +57,15 @@
 
                     <h3 class=" text-center">修改文章</h3>
                     <div class="hr-div"> <hr /></div>
-                    <form action="<?= site_url('cms/article/publish_article/'.$user_id)?>" method="post">
+                    <form action="<?= site_url('cms/article/edit/'.$article['article_id'])?>" method="post">
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <label>标题</label>
-                            <input type="text" class="form-control" required="required" placeholder="输入标题 " name="title" />
+                            <input type="text" class="form-control" required="required" placeholder="<?= $article['title']?> " name="title" />
                         </div>
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <p>选择专栏</p>
                             <select name="category[]">
+                                <option value="3" selected="selected"><?= $cateChose?></option>
                                 <?php foreach($category as $v):?>
                                 <option value ="<?= $v['category']?>"><?= $v['category']?></option>
                                 <? endforeach?>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <label>文章内容</label>
-                            <textarea class="form-control" rows="14" placeholder="编写文章 " name="content"></textarea>
+                            <textarea class="form-control" rows="14" placeholder="编写文章 " name="content"><?= $article['content']?></textarea>
                         </div>
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <button type="submit" class="btn btn-primary">发表文章</button>
@@ -86,12 +86,12 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item active">导航栏</a>
 
-                        <a href="<?= site_url('cms/login/index_user/'.$user_id)?>" class="list-group-item">发表文章</a>
+                        <a href="<?= site_url('cms/login/index_user/')?>" class="list-group-item">发表文章</a>
                         <a href="admin-user-list.html" class="list-group-item">New Users</a>
                         <a href="<?= site_url('cms/article/index/')?>" class="list-group-item">文章管理</a>
-                        <a href="<?= site_url('cms/category/index/'.$user_id)?>" class="list-group-item">专栏管理</a>
-                        <a href="<?= site_url('cms/user/index'.$user_id)?>" class="list-group-item">用户管理</a>
-                        <a href="admin-change-password.html" class="list-group-item">Change Password</a>
+                        <a href="<?= site_url('cms/category/index/')?>" class="list-group-item">专栏管理</a>
+                        <a href="<?= site_url('cms/user/index/')?>" class="list-group-item">用户管理</a>
+                        <a href="<?= site_url('cms/user/change_passwd/'.$user_id)?>" class="list-group-item">修改密码</a>
 
 
                     </div>
@@ -101,8 +101,7 @@
                         Nulla pretium lectus vel justo iaculis blandit.
                     </div>
 
-                </div>
-            </div>
+                </div            </div>
         </div>
     </section>
   <div id="footer">

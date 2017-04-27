@@ -22,9 +22,14 @@ class  Category extends MY_controller
     {
         $category = $this->cate->get_category();
         $count = $this->cate->count_category();
+        $user_id = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+
         $data = [
             'count' => $count,
             'category' => $category,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
         ];
 //        var_dump($data);die;
         $this->load->view('cms/admin-category.html', $data);
@@ -64,12 +69,20 @@ class  Category extends MY_controller
     public function edit_category()
     {
         $category_id = $this->uri->segment(4);
-        $category['category'] = $this->cate->get($category_id);
+        $category= $this->cate->get($category_id);
+        $user_id = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+
 //        var_dump( $category_id,$category);die;
 //        $data= ['category'=> $category];
 //        var_dump($data);die;
+        $data = [
+            'category' => $category,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
+        ];
 
-        $this->load->view('cms/admin-edit-category.html',$category);
+        $this->load->view('cms/admin-edit-category.html',$data);
 //        $this->cate->edit_category($category_id,$category);
     }
 

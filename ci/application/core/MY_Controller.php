@@ -17,7 +17,7 @@ class MY_Controller extends CI_Controller
 //        var_dump($_SESSION);
         $username = $this->session->userdata('user_name');
         $uid = $this->session->userdata('user_id');
-        var_dump($this->session->userdata());
+//        var_dump($this->session->userdata());
         if (!$username || !$uid) {
             redirect('cms/login/user_login_index');
         }
