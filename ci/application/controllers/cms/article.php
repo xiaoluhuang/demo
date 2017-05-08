@@ -6,6 +6,7 @@
  * Date: 2017/4/19
  * Time: 下午9:03
  */
+require_once BASEPATH . '/../application/libraries/Cache.php';
 class Article extends MY_controller
 {
     public function __construct()
@@ -18,6 +19,8 @@ class Article extends MY_controller
      */
     public function index()
     {
+        // $redis->get('key')
+        // if exists return
         $this->load->library('pagination');
         $config['base_url'] = site_url('cms/article/index');
         $config['total_rows'] = $this->db->count_all_results('article');
@@ -35,6 +38,8 @@ class Article extends MY_controller
         $offset = $this->uri->segment(4);
         $this->db->limit(4, $offset);
 //        unset($offset);
+        // cache 5h
+
         $article = $this->art->get_articles();
         $count = $this->art->count_article();
         $user_id = $this->session->userdata('user_id');
@@ -48,7 +53,8 @@ class Article extends MY_controller
             'user_name' => $user_name,
         ];
 //        var_dump($data);die;
-        $this->load->view('cms/admin-article.html', $data);
+        $html = $this->load->view('cms/admin-article.html', $data);
+        // redis->set('article_id', $html, 60 * 30);
     }
 
 
@@ -87,7 +93,16 @@ class Article extends MY_controller
     public function detail()
     {
         $article_id = $this->uri->segment(4);
-        $article = $this->art->get($article_id);
+        $this->load->library('cache', ['driver' => Cache::DRIVER_REDIS], 'cache');
+
+        echo 'get from cache';
+        $article = $this->cache->get($article_id);
+        if (!$article) {
+            echo 'get from database';
+            $article = $this->art->get($article_id);
+            $this->cache->set($article_id, $article);
+        }
+
         $category = $this->cate->get($article['category_id']);
         $user = $this->user->get($article['user_id']);
         $user_id = $this->session->userdata('user_id');

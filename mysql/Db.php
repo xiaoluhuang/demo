@@ -11,11 +11,35 @@
 class Db
 {
 
-    private $mysql_server_name = "localhost"; //数据库服务器名称
-    private $mysql_username = "root"; // 连接数据库用户名
-    private $mysql_password = ""; // 连接数据库密码
-    private $mysql_database = "demo"; // 数据库的名字
-    private $mysql_port = "3306"; //端口号
+    /**
+     * 数据库服务器名称
+     * @var string
+     */
+    private $mysql_server_name = "localhost";
+
+    /**
+     * 连接数据库用户名
+     * @var string
+     */
+    private $mysql_username = "root";
+
+    /**
+     * 连接数据库密码
+     * @var string
+     */
+    private $mysql_password = "";
+
+    /**
+     * 数据库的名字
+     * @var string
+     */
+    private $mysql_database = "demo";
+
+    /**
+     * 端口号
+     * @var string
+     */
+    private $mysql_port = "3306";
 
     protected $mysqli;
 
@@ -26,12 +50,12 @@ class Db
     }
 
     /**
-     * 执行query
+     * 执行queryquery
      *
      * @param $sql
      * @return bool|mysqli_result
      */
-    protected function query($sql) {
+    public function query($sql) {
         return $this->mysqli->query($sql);
     }
 

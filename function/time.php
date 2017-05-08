@@ -1,10 +1,9 @@
 <?php
 /* *****************************************************************
  * @Author: huangxiolu
- * @Created Time : 三  3/ 8 17:15:26 2017
+ * @Created Time : 日  4/30 23:49:33 2017
  *
- * @File Name: arr.php
+ * @File Name: time.php
  * @Description:
  * *****************************************************************/
-
-echo 'this is the best morning';
+var_dump(now());

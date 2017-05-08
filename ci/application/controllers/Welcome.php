@@ -20,6 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+	    // magic number
+        // 魔术数字 < 自由字符串 < 常量
+	    $cache = new MY_Cache(MY_Cache::DRIVER_MEMCACHED);
+	    $cache->set('cache', 'cache_value', 10);
+
 		$this->load->view('welcome_message');
 
 	}

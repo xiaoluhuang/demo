@@ -1,10 +1,12 @@
 <?php
 /* *****************************************************************
  * @Author: huangxiolu
- * @Created Time : 三  3/ 8 17:15:26 2017
+ * @Created Time : 六  5/ 6 10:20:09 2017
  *
- * @File Name: arr.php
+ * @File Name: text.php
  * @Description:
  * *****************************************************************/
-
-echo 'this is the best morning';
+this is a test!
+i need some practise!
+i know that   class enough,but i really hate the way he treats me!
+what a bad boy!

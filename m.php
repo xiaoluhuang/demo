@@ -1,10 +1,10 @@
 <?php
 /* *****************************************************************
  * @Author: huangxiolu
- * @Created Time : 三  3/ 8 17:15:26 2017
+ * @Created Time : 六  4/29 10:46:53 2017
  *
- * @File Name: arr.php
+ * @File Name: m.php
  * @Description:
  * *****************************************************************/
-
-echo 'this is the best morning';
+$m = new memcache();
+var_dump($m);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日志记录</title>
+</head>
+<body>
+
+<table>
+<?php foreach ($logList as $item) { ?>
+<tr>
+    <td><?= $item['request'] ?></td>
+    <td><?= $item['cnt'] ?></td>
+
+</tr>
+<?php } ?>
+</table>
+<table>
+    <?php foreach ($logList as $item) { ?>
+    <tr>
+        <td><?= $item['request'] ?></td>
+        <td><?= $item['cnt'] ?></td>
+
+    </tr>
+    <?php } ?>
+</table>
+</body>
+</html>

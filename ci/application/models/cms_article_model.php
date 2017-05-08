@@ -66,13 +66,30 @@ class  CMS_Article_model extends CI_Model
         $article = $this->db->get()->result_array();
         return $article;
     }
+
     /**
      * 查询对应的文章
      */
     public function get($article_id)
     {
-        $article = $this->db->where(['article_id' => $article_id])->get('article')->row_array();
-//        p($data);
+        // 连接redis
+//        $redis = new Redis();
+//        $redis->connect('127.0.0,1','6379');
+//        // 判断文章是否在缓存中
+//        $article = $redis->get($article_id);
+//        // 如果存在,直接返回
+//        if ($article) {
+//            return $article;
+//        }
+        // 如果不存在,从数据库取文章
+        $article = $this->db
+            ->where(['article_id' => $article_id])
+            ->get('article')
+            ->row_array();
+        // 存储到缓存里面,设置过期时间
+//        $redis->set($article_id, $article, 60*60);
+        // 返回
+
         return $article;
     }
 

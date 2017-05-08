@@ -110,7 +110,7 @@ class Login extends CI_controller
         $data = [
             'user_name' =>$user_name,
             'user_id' => $user_id,
-            'user_name' => $user_name,
+//            'user_name' => $user_name,
             'category' => $category
         ];
 //        var_dump($data);die;
