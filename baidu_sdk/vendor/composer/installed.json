@@ -1,0 +1,46 @@
+[
+    {
+        "name": "meolu/yii2-oss",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/meolu/yii2-oss.git",
+            "reference": "eeff27b53dc0eb508070b2900ba4b79af08eedfa"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/meolu/yii2-oss/zipball/eeff27b53dc0eb508070b2900ba4b79af08eedfa",
+            "reference": "eeff27b53dc0eb508070b2900ba4b79af08eedfa",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-12-26T07:47:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "meolu\\AliyunOSS\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "wushuiyong",
+                "email": "wushuiyong@huamanshu.com"
+            }
+        ],
+        "description": "阿里云OSS官方SDK的Composer封装，支持Yii2。",
+        "homepage": "https://github.com/meolu/yii2-oss",
+        "keywords": [
+            "AliyunOSS",
+            "aliyun",
+            "oss"
+        ]
+    }
+]

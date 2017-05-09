@@ -1,0 +1,11 @@
+php account_service_test.php
+php adgroup_service_test.php
+php campaign_service_test.php
+php creative_service_test.php
+php dynamic_creative_service_test.php
+php keyword_service_test.php
+php new_creative_service_test.php
+php reportService_test.php
+php toolkit_service_test.php
+php bulkjob_service_test.php
+php kr_service_test.php

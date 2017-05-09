@@ -370,8 +370,8 @@ $config['encryption_key'] = 'jal0_@$^#%.afnkstnak3785497';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = '/Users/huangxiaolu/workspace/demo/ci/uploads';
-$config['sess_match_ip'] = FALSE;
+$config['sess_save_path'] = '/tmp/session';
+$config['sess_match_ip'] = true;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
 
@@ -392,7 +392,7 @@ $config['sess_regenerate_destroy'] = FALSE;
 */
 $config['cookie_prefix']	= '';
 $config['cookie_domain']	= '';
-$config['cookie_path']		= '';
+$config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 $config['cookie_httponly'] 	= FALSE;
 

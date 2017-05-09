@@ -6,12 +6,16 @@
  * Date: 2017/4/19
  * Time: 下午5:52
  */
-class User extends CI_Controller
+class User extends MY_Controller
 {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('cms_user_model', 'cms');
+        $this->load->library('session');
+        $this->load->model('cms_user_model', 'user');
+        $this->load->model('cms_category_model', 'cate');
+        $this->load->model('cms_article_model', 'art');
+        $this->load->helper('form');
     }
 
     /*
@@ -33,18 +37,27 @@ class User extends CI_Controller
         //创建a连接
         $links = $this->pagination->create_links();
 //        p($data);die;
-//        $offset = $this->uri->segment(4);
-//        $this->db->limit($perPage, $offset);
+        $offset = $this->uri->segment(4);
+        $this->db->limit(4, $offset);
 //        p($links);die;
-        $user = $this->cms->get_user();
-        $count = $this->cms->count_user();
+        $user = $this->user->get_user();
+        $count = $this->user->count_user();
+        $user_id = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+
         $data = [
             'count' => $count,
             'user' => $user,
+            'links' => $links,
+            'user_id' => $user_id,
+            'user_name' => $user_name,
         ];
 //        var_dump($data);die;
-        $this->load->view('cms/admin-user-list.html', $data);
+        $this->load->view('cms/admin-user.html', $data);
     }
+    /*
+        * 加载用户首页
+        */
 
     /*
      * 添加新用户
@@ -59,15 +72,15 @@ class User extends CI_Controller
             'passwd' => md5($passwd),
         ];
         //判断这个用户名是否存在
-        $user = $this->cms->get_user();
+        $user = $this->user->get_user();
         foreach ($user as $value) {
             if (in_array($username, $value)) {
                 error('已经注册过,请登录');
             };
         }
-        $this->cms->add_user($registerdata);
+        $this->user->add_user($registerdata);
         //跳转页面
-        success('cms/user/index', '添加成功');
+        success('user/user/index', '添加成功');
     }
 
     /*
@@ -77,7 +90,7 @@ class User extends CI_Controller
     {
         $user_id = $this->uri->segment(4);
 //        var_dump($category_id);die;
-        $this->cms->delete_user($user_id);
+        $this->user->delete_user($user_id);
         success('cms/user/index', '用户删除成功');
     }
 
@@ -88,14 +101,21 @@ class User extends CI_Controller
     {
 
         $user_id = $this->uri->segment(4);
-        $user['user'] = $this->cms->get($user_id);
-        $this->load->view('cms/admin-change-password.html', $user);
+        $userId = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+        $user = $this->user->get($user_id);
+        $data = [
+            'user' => $user,
+            'user_id' => $userId,
+            'user_name' => $user_name,
+        ];
+        $this->load->view('cms/admin-change-password.html', $data);
     }
 
     public function change()
     {
         $user_id = $this->uri->segment(4);
-        $user = $this->cms->get($user_id);
+        $user = $this->user->get($user_id);
         $old_passwd = $this->input->post('old_passwd');
         $new_passwd1 = $this->input->post('new_passwd1');
         $new_passwd2 = $this->input->post('new_passwd2');
@@ -108,8 +128,9 @@ class User extends CI_Controller
         }
         $data = [
             'passwd' => md5($new_passwd2),
+            'user_id' => $user_id,
         ];
-        $this->cms->edit_user($user_id, $data);
+        $this->user->edit_user($user_id, $data);
         success('cms/user/index', '密码修改成功');
     }
 
@@ -119,8 +140,15 @@ class User extends CI_Controller
     public function change_name()
     {
         $user_id = $this->uri->segment(4);
-        $user['user'] = $this->cms->get($user_id);
-        $this->load->view('cms/admin-change-name.html', $user);
+        $userId = $this->session->userdata('user_id');
+        $user_name = $this->session->userdata('user_name');
+        $user = $this->user->get($user_id);
+        $data = [
+            'user' => $user,
+            'user_id' => $userId,
+            'user_name' => $user_name,
+        ];
+        $this->load->view('cms/admin-change-name.html', $data);
     }
 
     public function change_username()
@@ -130,7 +158,7 @@ class User extends CI_Controller
         $data = [
             'name' => $name,
         ];
-        $this->cms->edit_user($user_id, $data);
+        $this->user->edit_user($user_id, $data);
         success('cms/user/index', '用户名修改成功');
     }
 

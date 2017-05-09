@@ -31,11 +31,18 @@ class  CMS_Category_model extends CI_Model
     }
 
     /**
-     * 查询对应的栏目
+     * 查询对应的栏目,根据id查栏目,根据栏目查id
      */
     public function get($category_id)
     {
         $category = $this->db->where(['category_id' => $category_id])->get('category')->row_array();
+//        p($data);
+        return $category;
+    }
+
+    public function get_id($category_name)
+    {
+        $category = $this->db->where(['category' => $category_name])->get('category')->row_array();
 //        p($data);
         return $category;
     }
@@ -64,6 +71,8 @@ class  CMS_Category_model extends CI_Model
         $this->db->delete('category', ['category_id' => $category_id]);
 
     }
+
+
 }
 
 

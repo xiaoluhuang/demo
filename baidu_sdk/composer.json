@@ -1,0 +1,13 @@
+{
+    "name": "composer/composer",
+
+    "require": {
+
+       "meolu/yii2-oss":"*"
+    },
+    "autoload": {
+        "psr-4":{
+            "Service\\":"Service/"
+        }
+    }
+}

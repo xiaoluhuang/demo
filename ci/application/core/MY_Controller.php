@@ -12,11 +12,26 @@ class MY_Controller extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $username = $this->session->userdata('username');
-        $uid = $this->session->userdata('uid');
-//        if(!$username||!$uid){
-//            redirect('admin/login/index');
-//        }
+        $this->load->library('session');
+//        session_start();
+//        var_dump($_SESSION);
+        $username = $this->session->userdata('user_name');
+        $uid = $this->session->userdata('user_id');
+        if (!$uid) {
+//            log_message('error', 'cms_user_sessionnotfound' . );
+        }
+//        var_dump($this->session->userdata());
+        if (!$username || !$uid) {
+            redirect('cms/login/user_login_index');
+        }
+        $this->load->model('cms_user_model', 'user');
+        $this->load->model('cms_category_model', 'cate');
+        $this->load->model('cms_article_model', 'art');
+        $this->load->helper('form');
+        $this->userInfo = [
+            'user_id' => 9,
+            'user_name' =>'linda',
+        ];
 
     }
 

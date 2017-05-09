@@ -16,9 +16,9 @@ class  CMS_Article_model extends CI_Model
     /**
      * 添加文章,增
      */
-    public function add_article($article)
+    public function publish_article($article)
     {
-        $this->db->insert('article', $article);
+        $this->db->insert('article',$article);
     }
 
     /**
@@ -26,7 +26,44 @@ class  CMS_Article_model extends CI_Model
      */
     public function get_article()
     {
-        $article = $this->db->get('article')->result_array();
+        $articles = $this->db->get('article')->result_array();
+        // ---- 第一种:先取所有id,二次查表得到[id => name]键值对,再逐条回填name字段
+        // 取该数组里的所有去重uid
+        // $userInfo = select * from user where id in (uids)
+
+        // 取该数组里的所有去重category
+        // $categoryInfo = select * from category where id in (category_ids)
+
+        // foreach ($articles as &$article) {
+        //  $article['user_name'] = $userInfo[$article['user_id']]
+        //  $article['category_name'] = $userInfo[$article['category_id']]
+        // }
+        $userName = $this->db->select('name')->from('user')
+            ->join('article','user.user_id=article.user_id')
+            ->get()->result_array();
+        $category = $this->db->select('category')->from('category')
+            ->join('article','category.category_id=article.category_id')
+            ->get()->result_array();
+//        var_dump($category,$userName);
+        foreach ($articles as &$article){
+            $article['name'] = $userName[$article['user_id']];
+            $article['category'] = $category[$article['category_id']];
+        }
+
+        return $articles;
+    }
+
+    public function get_articles()
+    {
+        $this->db->select('article_id');
+        $this->db->select('title');
+        $this->db->select('article.created_at');
+        $this->db->select('category.category');
+        $this->db->select('user.name');
+        $this->db->from('article');
+        $this->db->join('category','category.category_id=article.category_id','left');
+        $this->db->join('user','user.user_id=article.user_id','left');
+        $article = $this->db->get()->result_array();
         return $article;
     }
 
@@ -35,8 +72,24 @@ class  CMS_Article_model extends CI_Model
      */
     public function get($article_id)
     {
-        $article = $this->db->where(['article_id' => $article_id])->get('article')->row_array();
-//        p($data);
+        // 连接redis
+//        $redis = new Redis();
+//        $redis->connect('127.0.0,1','6379');
+//        // 判断文章是否在缓存中
+//        $article = $redis->get($article_id);
+//        // 如果存在,直接返回
+//        if ($article) {
+//            return $article;
+//        }
+        // 如果不存在,从数据库取文章
+        $article = $this->db
+            ->where(['article_id' => $article_id])
+            ->get('article')
+            ->row_array();
+        // 存储到缓存里面,设置过期时间
+//        $redis->set($article_id, $article, 60*60);
+        // 返回
+
         return $article;
     }
 

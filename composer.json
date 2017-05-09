@@ -1,0 +1,7 @@
+{
+    "name": "composer/composer",
+
+    "require": {
+       "meolu/yii2-oss":"*"
+    }
+}
