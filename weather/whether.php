@@ -11,9 +11,9 @@ function catchWhether()
 	$regW="/<div class=\"wind\">(.*)\s+(.+)/";
 	
 	$html=file_get_contents($url);
-	//print_r($html);
+//	print_r($html);die;
 	if ($html == "") return "Catch $url error !";
-	//$html = iconv( "UTF-8", "gb2312//IGNORE" , $html);	//转换编码方式
+	$html = iconv( "UTF-8", "gb2312//IGNORE" , $html);	//转换编码方式
 	try
 	{
 		preg_match($regD,$html,$matchD);		//仅匹配一次
@@ -35,4 +35,3 @@ function catchWhether()
 catchWhether();	
 print $whether;
 
-?>

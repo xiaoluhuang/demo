@@ -43,8 +43,11 @@ class Db
 
     protected $mysqli;
 
-    public function __construct()
+    public function __construct($db = null)
     {
+        if ($db) {
+            $this->mysql_database = $db;
+        }
         $this->mysqli = new mysqli($this->mysql_server_name, $this->mysql_username, $this->mysql_password, $this->mysql_database, $this->mysql_port);
         $this->mysqli->set_charset('utf-8');
     }
@@ -55,7 +58,8 @@ class Db
      * @param $sql
      * @return bool|mysqli_result
      */
-    public function query($sql) {
+    public function query($sql)
+    {
         return $this->mysqli->query($sql);
     }
 

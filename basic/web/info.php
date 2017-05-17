@@ -1,11 +1,9 @@
 <?php
 /* *****************************************************************
  * @Author: huangxiolu
- * @Created Time : 一  3/13 23:42:55 2017
+ * @Created Time : 一  5/15 09:19:02 2017
  *
- * @File Name: t.php
+ * @File Name: info.php
  * @Description:
  * *****************************************************************/
-var_dump($i);
-var_dump($i++);
-var_dump($i);
+phpinfo();

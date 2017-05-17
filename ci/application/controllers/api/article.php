@@ -5,6 +5,9 @@
  * Date: 2017/3/23
  * Time: 上午10:57
  */
+/**
+ *  老公写的,让我理解什么是api;
+ */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Article extends CI_Controller

@@ -6,12 +6,39 @@
  * Date: 2017/5/7
  * Time: 下午12:35
  */
+
+/**
+ * Class Access
+ *  access.log获取最高访问页面和pv,uv的方法
+ */
 class Access extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
         header('Content-type: application/json');
+    }
+
+    /**
+     * 获取访问量最高的url
+     */
+    public function index()
+    {
+        $data = [
+            'code' => 0,
+            'data' => [
+                'apple' => [
+                    'yinbiao' => 'apple',
+                    'jieshi' => [
+                        ['cixing' => 'n', 'liju' => 'xxx'],
+                        ['cixing' => 'v', 'liju' => 'vvv'],
+                        ['cixing' => 'adj', 'liju' => 'adj'],
+                    ]
+                ]
+            ],
+            'msg' => '',
+        ];
+        echo json_encode($data);
     }
 
     /**
