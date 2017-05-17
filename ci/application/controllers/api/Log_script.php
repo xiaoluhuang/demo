@@ -6,7 +6,7 @@
  * Date: 2017/5/7
  * Time: 下午12:35
  */
-class Script extends CI_Controller
+class Log_script extends CI_Controller
 {
     const ACCESS_LOG_FILE = '/usr/local/var/log/nginx/access.log';
 

@@ -7,13 +7,19 @@
  *
  * @Description:
  * *****************************************************************/
-abstract class Car{
-    abstract function bmw() {
-    echo 'everybady is having this!';
-    } 
+abstract class Car {
+    abstract function bmw();
 }
 
-class Bike extends Car{
+class Bike extends Car {
 
-    echo 'this is just to practise,i do not know what to do!';
+     public function bmw()
+     {
+         // TODO: Implement bmw() method.
+         echo 'i love bmw';
+     }
+     public function own() {
+         echo 'this is just to practise,i do not know what to do!';
+     }
+
 }
