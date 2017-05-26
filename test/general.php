@@ -71,7 +71,7 @@ foreach ($grade as $g)
     $v = $db->query($sql)->fetch_row();
     $mappingx[] = [
         // 当前元素的name+id => 父级元素的name+id;
-        $g[0].'_'.$g[1] => $v[0].'_'.$v[1],
+        formatKey($g[0], $g[1]) => formatKey($v[0], $v[1]),
     ];
     $mappingy[$g[0].'_'.$g[1]] = $order;
 
@@ -99,6 +99,9 @@ $parent = sprintf('new Array(%s)', implode(',', $parent_array));
 
 
 
+function formatKey($name, $id) {
+    return sprintf('%s_%s', $name, $id);
+}
 //$name = implode(',', $id_array);
 // parent_array  获取当前元素的父级元素的序号
 // 建立两个映射表,其实是两个数组

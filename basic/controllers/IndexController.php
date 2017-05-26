@@ -7,13 +7,18 @@
  */
 
 namespace app\controllers;
-use yii\web\Controller;
 
-class IndexController extends Controller
+use yii\web\Controller;
+use app\controllers\CommonController;
+
+class IndexController extends CommonController
 {
+    public $layout = false; // layout是成员变量
 
     public function actionIndex()
     {
-        echo 'hello world!';
+//        $this->layout = false;
+        $this->layout = ('layout1');
+        return $this->render('index');
     }
 }

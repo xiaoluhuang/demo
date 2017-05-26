@@ -125,7 +125,6 @@ class Word_script
             if (!$ret) {
                 file_put_contents('/tmp/weather.error.log', date('Y-m-d H:i:s') . " {$word[0]}:例句插入失败\n", FILE_APPEND);
             }
-            var_dump($ret);
             ++$count;
         }
         echo "共插入$count<BR>";
@@ -149,9 +148,9 @@ class Word_script
             for ($i = 0; $i < 4; $i++) {
                 $word_id = rand(1, 1609);
 //                $deleteSql = sprintf('delete from word_unit wher')
-                $insertSql = sprintf('insert into word_unit (word_id,unit_id) values (%d,%d)',$word_id,$unit[0]);
+                $insertSql = sprintf('insert into word_unit (word_id,unit_id) values (%d,%d)', $word_id, $unit[0]);
                 $ret = $this->db->query($insertSql);
-                var_dump($insertSql,$ret);
+                var_dump($insertSql, $ret);
                 if (!$ret) {
                     echo $unit[0] . '插入失败';
                 }
@@ -159,6 +158,13 @@ class Word_script
             }
             ++$count;
         }
-        return  $count;
+        return $count;
     }
+
+
+    /**
+     *  抓取例句,并存入数据库
+     */
+
+
 }
