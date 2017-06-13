@@ -14,7 +14,6 @@ abstract class Person
 class Girl extends Person
 {
     public function pee()
-    {
         // TODO: Implement pee() method.
         echo '我要蹲着撒尿', PHP_EOL;
 

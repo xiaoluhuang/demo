@@ -173,7 +173,7 @@ $cityUrl = 'http://www.weather.com.cn/weather/' . $code . '.shtml';
 $cityUrl = 'http://walle-web.io/';
 $html->load_file($cityUrl);
 var_dump($html->find('#banner-title'));
-die;
+
 
 foreach ($content as $item) {
     // curl下来的内容中加载

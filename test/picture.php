@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // 表单提交方式
 
 
     $pircture = $_FILES['picture']; // 经由 HTTP POST 文件上传而提交至脚本的变量
-    var_dump($pircture);
+    var_dump($pircture);die;
     /**
      *  ["name"]=> string(36) "4e7d82aec8a0d7177a0fe3814fb434e5.jpg"
      * ["type"]=> string(10) "image/jpeg"

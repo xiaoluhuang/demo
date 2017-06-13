@@ -32,20 +32,6 @@ class StaticClass {
     }
 }
 
-$obj1 = new StaticClass();
-$obj1->setAge('huangxiaolu');
-// ==
-StaticClass::setName('da huai dan');
-$obj1->setName('huangxiaolu');
-$obj1->getAge();
-
-$obj2 = new StaticClass();
-$obj2->getAge();
-$obj2->setAge('wushuiyong');
-$obj2->getAge();
-$obj1->getAge();
-
-return true;
 
 
 $obj1 = new StaticClass();

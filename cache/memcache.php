@@ -10,24 +10,23 @@
 $memcache = new Memcache;
 $memcache->connect('127.0.0.1', 11211);
 
-// set
-//$is_set = $memcache->set('key1', '中华人民共和国', MEMCACHE_COMPRESSED, 0);
-//
-//// get
-//$var = $memcache->get('key1');
-//var_dump($var);
-//
-//
-//$name = 'huangxiaolu';
-//$isSet = $memcache->set('name', 'huangxiaolu', MEMCACHE_COMPRESSED, 3);
-//
-//$var = $memcache->get('name');
-//var_dump($var);
-//
-//sleep(5);
-//
-//$var = $memcache->get('name');
-//var_dump($var);
+
+$is_set = $memcache->set('key1', '中华人民共和国', MEMCACHE_COMPRESSED, 0);
+
+// get
+$var = $memcache->get('key1');
+var_dump($var);
+
+
+$name = 'huangxiaolu';
+$isSet = $memcache->set('name', 'huangxiaolu', MEMCACHE_COMPRESSED, 3);
+
+$var = $memcache->get('name');
+var_dump($var);
+
+
+$var = $memcache->get('name');
+var_dump($var);
 
 
 function square($num)
@@ -90,3 +89,10 @@ foreach ($origin as $v) {
     $square[] = square($v);
 }
 
+
+echo 'this is from today';
+
+$a = $memcache->add('mood', 'happy',0);
+//$b = $memcache->add('mood', 'worse',0);
+
+var_dump($memcache->get('mood'));

@@ -13,5 +13,3 @@ sleep(4);
 
 $redisName = $redis->get('redis_name');
 var_dump($redisName);
-
-
