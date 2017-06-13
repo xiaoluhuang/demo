@@ -5,7 +5,7 @@ use yii\helpers\Html;
 <!DOCTYPE html>
 <html class="login-bg">
 <head>
-	<title>慕课商城 - 后台管理</title>
+	<title>黄晓露的小店 - 后台管理</title>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
@@ -41,11 +41,15 @@ use yii\helpers\Html;
             'fieldConfig' => [
                 'template' => '{input}{error}',
             ]
-        ]);?>
+        ]);
+        // model 调用 form
+        $model->load(Yii::$app->request->post())
+        ?>
         <div class="span4 box">
             <div class="content-wrap">
-                <h6>慕课商城 - 后台管理</h6>
-                <?= $form->field($model,'admin_user')->textInput([
+                <h6>黄晓露的小店 - 后台管理</h6>
+<!--                form 调用 model-->
+                <?= $form->field($model, 'admin_user')->textInput([
                     'class' => 'span12',
                     'placeholder' => '管理员账号',
                 ])?>

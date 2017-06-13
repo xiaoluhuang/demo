@@ -23,7 +23,7 @@ use yii\helpers\Html;
                         $form = ActiveForm::begin([
                             'options' => ['class' => 'new_user_form inline-input'],
                             'fieldConfig' => [
-                                'template' => '<div class="span12 field-box">{label}{input}</div>{error}'
+                                    'template' => '<div class="span12 field-box">{label}{input}</div>{error}'
                             ],
                         ]);
                         ?>

@@ -70,7 +70,7 @@ class Admin extends ActiveRecord
             return false;
         }
         // 将用户登录的信息写入session
-        $lifeTime = $this->rememberMe ? 24 * 3600 : 0;
+        $lifeTime = $this->rememberMe ? 24 * 60 *60 : 0;
         $session = Yii::$app->session;
         session_set_cookie_params($lifeTime);
         $session['admin'] = [

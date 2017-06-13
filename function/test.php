@@ -28,5 +28,6 @@ echo $a,PHP_EOL;
 echo $b,PHP_EOL;
 echo strpos($a, 'l');
 echo strpos($b, 'l');
-
-
+$memcache = new Memcache;
+$memcache->connect('127.0.0.1', 11211);
+echo  phpinfo();

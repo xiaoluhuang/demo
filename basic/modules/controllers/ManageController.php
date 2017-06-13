@@ -69,7 +69,9 @@ class ManageController extends Controller
             'totalCount' => $count,
             'pageSize' => $paseSize,
         ]);
-        $managers = $model->offset($pager->offset)->limit($pager->limit)->all();
+        $managers = $model->offset($pager->offset)
+                    ->limit($pager->limit)
+                    ->all();
         return $this->render('managers', [
             'managers' => $managers,
             'pager' => $pager,

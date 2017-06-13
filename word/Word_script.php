@@ -16,11 +16,31 @@ class Word_script
 {
     const FILE = '/Users/huangxiaolu/Downloads/英语单词库.txt';
 
+    const SOLR_URI = 'http://localhost:8983/solr/beibei/select?indent=on&wt=json&q=*:*';
+
     public function __construct()
     {
         $this->db = new Db('beibei');
     }
 
+    public function solr($word = null, $definition = null) {
+        $fq = '';
+        if ($word) {
+            $word = urlencode($word);
+            $fq .= "fq=word:{$word}";
+        }
+        if ($definition) {
+            $definition = urlencode($definition);
+            $fq .= "fq=definition:{$definition}";
+        }
+
+        $url = sprintf('%s&%s', self::SOLR_URI, $fq);
+        var_dump($url);
+        $ret = $this->curl($url);
+        $array = json_decode($ret, true);
+        return $array['response'];
+
+    }
     /**
      *  用curl打开网页信息
      */
@@ -111,16 +131,16 @@ class Word_script
 
             $sent = trim(strip_tags($valuableContent));
             $allSentence = preg_replace('/\s{2,}/', ' ', $sent);
-            $sentencePos = strpos($allSentence, '。');
-            $sentence = substr($allSentence, 0, $sentencePos);
-            if (!$sentence) {
+            $definitionPos = strpos($allSentence, '。');
+            $definition = substr($allSentence, 0, $definitionPos);
+            if (!$definition) {
                 file_put_contents('/tmp/weather.error.log', date('Y-m-d H:i:s') . " {$word[0]}:例句抓取失败\n", FILE_APPEND);
                 $delSql = sprintf('delete from table word where name = "%s"', $word[0]);
                 $this->db->query($delSql);
                 continue;
             }
             // 存入数据库
-            $sql = sprintf('update word set sentence = "%s" where name = "%s"', $sentence, $word[0]);
+            $sql = sprintf('update word set sentence = "%s" where name = "%s"', $definition, $word[0]);
             $ret = $this->db->query($sql);
             if (!$ret) {
                 file_put_contents('/tmp/weather.error.log', date('Y-m-d H:i:s') . " {$word[0]}:例句插入失败\n", FILE_APPEND);
@@ -168,3 +188,7 @@ class Word_script
 
 
 }
+
+$t = new Word_script();
+$ret = $t->solr($word = '', $definition='可以');
+var_dump($ret);
