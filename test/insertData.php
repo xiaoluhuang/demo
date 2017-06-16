@@ -717,6 +717,16 @@ $array2 = [
 ];
 // "中卫"=>"宁夏",
 $count = 0;
+foreach ($array1 as $key=>$value) {
+    $sql1 = sprintf("insert into city (province, city) values ('%s','%s')", $value, $key);
+    $ret1 = $db->query($sql1);
+    var_dump($sql1, $ret1);
+    if (!$ret1) {
+        echo $key . '插入失败';
+    }
+    ++$count;
+}
+var_dump($count);
 foreach ($array2 as $key=>$value) {
     $sql1 = sprintf("update city set code = '%s' where city = '%s'", $value, $key);
     $ret1 = $db->query($sql1);

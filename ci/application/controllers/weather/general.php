@@ -67,13 +67,6 @@ $id = sprintf('new Array(%s)', implode(',', $id_array));
 $name = sprintf('new Array("%s")', implode('","', $name_array));
 $parent = sprintf('new Array(%s)', implode(',', $parent_array));
 
-$cities = [];
-foreach ($name_array as $name) {
-    $cid++;
-    $cities[] = [
-        $cid => $name,
-    ];
-}
 
 
 //$name = implode(',', $id_array);

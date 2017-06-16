@@ -9,10 +9,11 @@
  */
 require_once __DIR__ . '/../../../../mysql/Db.php';
 
-class Claw
+class Claw extends CI_Controller
 {
     public function __construct()
     {
+        parent::__construct();
         $this->db = new  Db('weather');
     }
 
@@ -63,10 +64,6 @@ class Claw
         foreach ($cityInfo as $city) {
             $this->weatherInfo($city['1'], $city['0']);
         }
-        $city = [
-            'data' => $cityInfo,
-        ];
-        return json_encode($city);
     }
 
     /**
@@ -125,6 +122,7 @@ class Claw
                 $city, $value[0], $value[1], $value[2], $value[1], $value[3]);
             $ret = $db->query($sql);
 
+            var_dump($ret);
             // select update/insert
         }
 
@@ -146,29 +144,6 @@ class Claw
     }
 
 
-    /**
-     * @param $url
-     * 抓去天气信息,存进数据库
-     */
-    public function fetchWeatherInfo($code)
-    {
-        $cityUrl = 'http://www.weather.com.cn/weather/' . $code . '.shtml';
-        $html = $this->curl($cityUrl);
-
-
-        $startPos = strpos($html, '<ul class="t clearfix">');
-        $endPos = strpos($html, '<em class="on">分时段预报</em>');
-        $valuableContent = substr($html, $startPos, $endPos - $startPos - 25);
-        $valuableContent = str_replace(['', "\n"], '', $valuableContent);
-        $matchs = [];
-        preg_match_all('(<li class.*?li>)', $valuableContent, $matchs);
-//        $pattern = '((<h1.*?</h1>).*(<p.*class="wea".*?</p>).*(<p class="tem".*?</p>).*(<p class="win".*?</p>))';
-
-
-        return $matchs[0];
-    }
-
 }
-
 
 

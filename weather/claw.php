@@ -8,7 +8,6 @@
  * Time: 上午8:15
  */
 require_once __DIR__ . '/../mysql/Db.php';
-require_once __DIR__ . '/simple_html_dom/simple_html_dom.php';
 
 class Claw
 {
@@ -53,44 +52,45 @@ class Claw
      */
     public function getCity()
     {
-        $sql = sprintf("select city_code,city from city");
+        $sql = sprintf("select code,city from city");
         $cityInfo = $this->db->query($sql)->fetch_all();
+//        var_dump($cityInfo);die;
+
         foreach ($cityInfo as $city) {
             $this->weatherInfo($city['1'], $city['0']);
         }
         $city = [
             'data' => $cityInfo,
         ];
-        return json_encode($city);
     }
 
     /**
      * @param $url
      * 抓去天气信息,存进数据库
      */
-    public function weatherInfo($city, $code)
+    public function weatherInfo($city ="巢湖", $code='101220105')
     {
         $db = new Db('weather');
         $cityUrl = 'http://www.weather.com.cn/weather/' . $code . '.shtml';
         $html = $this->curl($cityUrl);
-
 
         $startPos = strpos($html, '<ul class="t clearfix">');
         $endPos = strpos($html, '<em class="on">分时段预报</em>');
         $valuableContent = substr($html, $startPos, $endPos - $startPos - 25);
         $valuableContent = str_replace(['', "\n"], '', $valuableContent);
         $matchs = [];
-        preg_match_all('(<li class.*?li>)', $valuableContent, $matchs);
+        preg_match_all('(<li.*?</li>)', $valuableContent, $matchs);
         $weatherData = [];
-
+//        var_dump($valuableContent, $matchs);die;
         $days = 0;
-        $pattern = '((<h1.*?</h1>).*(<p.*class="wea".*?</p>).*(<p class="tem".*?</p>).*(<p class="win".*?</p>))';
-
+        $patternDefault = '((<h1.*?</h1>).*(<p.*class="wea".*?</p>).*(<p class="tem".*?</p>).*(<p class="win".*?</p>))';
+        $pattern = '((<h1.*?</h1>).*(<p.*class="wea".*?</p>).*(<p class="tem".*?</p>).*(<i.*?</i>).*)';
 
         foreach ($matchs[0] as $itemLine) {
             $lineMatch = [];
             $weatherOne = [];
             $ret = preg_match_all($pattern, $itemLine, $lineMatch);
+//            var_dump($lineMatch,$ret);die;
             if (!$ret) {
                 echo "正在匹配出错\n";
                 file_put_contents('/tmp/weather.error.log', date('Y-m-d H:i:s') . " 正在匹配出错:{$city} {$pattern}\n", FILE_APPEND);
@@ -108,14 +108,15 @@ class Claw
         foreach ($weatherData as $value) {
 //            $db = new Db('weather');
             $deleteSql = sprintf(
-                "delete from weatherInfo where city='%s' and the_day='%s'",
+                "delete from info where city='%s' and the_day='%s'",
                 $city, $value[0]);
+//            var_dump($deleteSql);
             $ret = $db->query($deleteSql);
             if (!$ret) {
                 echo "删除出错\n";
-                file_put_contents('/tmp/weather.error.log', date('Y-m-d H:i:s') . " 正在匹配出错:{$city} {$pattern}\n", FILE_APPEND);
+                file_put_contents('/tmp/weather.error.log', date('Y-m-d H:i:s') . " 删除出错:{$city} {$pattern}\n", FILE_APPEND);
             }
-            $sql = sprintf("insert into weatherInfo 
+            $sql = sprintf("insert into info 
                     values (null, '%s','%s', '%s', '%s', '%s')",
                 $city, $value[0], $value[1], $value[2], $value[1], $value[3]);
             $ret = $db->query($sql);
@@ -132,55 +133,18 @@ class Claw
      */
     public function getWeather($city)
     {
-        $sql = sprintf("select * from weatherInfo where city='%s'", $city);
-        $cityWeather = $this->db->query($sql)->fetch_row();
-        $weather = [
-            'data' => $cityWeather,
-        ];
-        return json_encode($weather);
+        $sql = sprintf("select * from info where city='%s'", $city);
+        $cityWeather = $this->db->query($sql)->fetch_all();
+//        var_dump($sql,$cityWeather);
+
+        return $cityWeather;
+
     }
 
 
-    /**
-     * @param $url
-     * 抓去天气信息,存进数据库
-     */
-    public function fetchWeatherInfo($code)
-    {
-        $cityUrl = 'http://www.weather.com.cn/weather/' . $code . '.shtml';
-        $html = $this->curl($cityUrl);
-
-
-        $startPos = strpos($html, '<ul class="t clearfix">');
-        $endPos = strpos($html, '<em class="on">分时段预报</em>');
-        $valuableContent = substr($html, $startPos, $endPos - $startPos - 25);
-        $valuableContent = str_replace(['', "\n"], '', $valuableContent);
-        $matchs = [];
-        preg_match_all('(<li class.*?li>)', $valuableContent, $matchs);
-//        $pattern = '((<h1.*?</h1>).*(<p.*class="wea".*?</p>).*(<p class="tem".*?</p>).*(<p class="win".*?</p>))';
-
-
-        return $matchs[0];
-    }
-
 }
 
-$code = '101130101';
-$claw = new Claw();
-$content = $claw->fetchWeatherInfo($code);
-$html = new simple_html_dom();
-$cityUrl = 'http://www.weather.com.cn/weather/' . $code . '.shtml';
-$cityUrl = 'http://walle-web.io/';
-$html->load_file($cityUrl);
-var_dump($html->find('#banner-title'));
-die;
-
-foreach ($content as $item) {
-    // curl下来的内容中加载
-    $html->load($item);
-
-    var_dump($html->find('h1'));
-    die;
-}
-
-
+//
+//$claw = new Claw();
+//$claw->getCity();
+//$claw->weatherInfo();

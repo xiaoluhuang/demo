@@ -70,12 +70,6 @@ $name = sprintf('new Array("%s")', implode('","', $name_array));
 $parent = sprintf('new Array(%s)', implode(',', $parent_array));
 
 
-$cities = [];
-foreach ($city as $name) {
-    $cities[] =  $name[0];
-}
-var_dump($name_array);
-
 //$name = implode(',', $id_array);
 // parent_array  获取当前元素的父级元素的序号
 // 建立两个映射表,其实是两个数组
