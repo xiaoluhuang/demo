@@ -15,6 +15,7 @@ class User
      * @var
      */
     protected $name;
+    protected $age;
 
     /**
      * 成员变量,子类可以继承使用
@@ -33,6 +34,7 @@ class User
     public function __construct($name)
     {
         $this->name = $name;
+        $this->age = $age;
     }
 
     /**
@@ -41,6 +43,7 @@ class User
      */
     public function sing($song)
     {
+        echo "$this->name is $this->age and can  sing a song: $song\n";
         echo "$this->name can  sing a song: $song, thank you\n";
     }
 
