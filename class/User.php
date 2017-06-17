@@ -15,7 +15,7 @@ class User
      * @var
      */
     protected $name;
-
+    protected $age;
     /**
      * 构造函数
      * User初始化时,会执行这个函数
@@ -26,6 +26,7 @@ class User
     public function __construct($name)
     {
         $this->name = $name;
+        $this->age = $age;
     }
 
     /**
@@ -34,7 +35,7 @@ class User
      */
     public function sing($song)
     {
-        echo "$this->name can  sing a song: $song\n";
+        echo "$this->name is $this->age and can  sing a song: $song\n";
     }
 
     /**

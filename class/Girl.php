@@ -65,6 +65,7 @@ class Girl {
         // 记录日志
         // 清理
         echo __METHOD__, " name= ", $this->name, PHP_EOL;
+        echo 'this is from huangxiaolu';
     }
 
     /**
