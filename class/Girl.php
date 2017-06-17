@@ -62,9 +62,12 @@ class Girl {
      * 4.析构函数
      */
     public function __destruct() {
+        unset($boy);
+        unset($girl);
         // 记录日志
         // 清理
         echo __METHOD__, " name= ", $this->name, PHP_EOL;
+        exit;
     }
 
     /**

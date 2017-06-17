@@ -17,6 +17,13 @@ class User
     protected $name;
 
     /**
+     * 成员变量,子类可以继承使用
+     * @var
+     */
+    protected $gender;
+
+
+    /**
      * 构造函数
      * User初始化时,会执行这个函数
      *
@@ -34,7 +41,7 @@ class User
      */
     public function sing($song)
     {
-        echo "$this->name can  sing a song: $song\n";
+        echo "$this->name can  sing a song: $song, thank you\n";
     }
 
     /**
@@ -42,6 +49,15 @@ class User
      * @param $song
      */
     public function dance($dance)
+    {
+        echo "$this->name can $dance\n";
+    }
+
+    /**
+     * 成员方法
+     * @param $song
+     */
+    public function cooking($dance)
     {
         echo "$this->name can $dance\n";
     }
